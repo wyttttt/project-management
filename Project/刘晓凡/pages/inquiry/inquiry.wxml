@@ -1,0 +1,40 @@
+<!--pages/inquiry/inquiry.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <p>选择咨询方式</p>
+  </view>
+
+  <view class="secondPart"  bindtap="toMfzx">
+    <view class="secondPartIcon">
+      <image class="secondPartImg" src="../../icon/inquiry/secondPartImg.png"></image>
+    </view>
+    <p class="secondPartP1">免费咨询</p>
+    <p class="secondPartP2">免费咨询，多名律师为您解答</p>
+  </view>
+
+  <view class="secondPart" bindtap="toTip">
+    <view class="threePartIcon">
+      <image class="threePartImg" src="../../icon/inquiry/threePartImg.png"></image>
+    </view>
+    <p class="secondPartP1">图文咨询</p>
+    <p class="secondPartP2">通过图文，语音与律师在线沟通</p>
+  </view>
+
+  <view class="secondPart" bindtap="toTip">
+    <view class="fourPartIcon">
+      <image class="fourPartImg" src="../../icon/inquiry/fourPartImg.png"></image>
+    </view>
+    <p class="secondPartP1">电话咨询</p>
+    <p class="secondPartP2">专业律师为您电话解答</p>
+  </view>
+
+  <view class="secondPart" bindtap="toTip">
+    <view class="fivePartIcon">
+      <image class="fivePartImg" src="../../icon/inquiry/fivePartImg.png"></image>
+    </view>
+    <p class="secondPartP1">见面咨询</p>
+    <p class="secondPartP2">约定时间地点，与律师见面详谈</p>
+  </view>
+
+</view>

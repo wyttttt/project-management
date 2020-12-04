@@ -1,0 +1,15 @@
+<!--pages/lsfcx/lsfcx.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <!-- <p class="firstPartP1">选择案件类型</p> -->
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+
+      <view class="firstPartP">{{array[index]}}</view>
+
+    </picker>
+
+
+  </view>
+
+</view>

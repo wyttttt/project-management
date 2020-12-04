@@ -1,0 +1,40 @@
+<!--pages/searchLawyer/searchLawyer.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <view class="firstPartOne">
+      <image class="firstPartImg" src="../../icon/alcx/secondPartImg.png"></image>
+      <input bindinput="setlawyer" class="firstPartI" type="text" placeholder="搜索律师" />
+    </view>
+    <view class="firstPartTwo" bindtap="getlawyer">
+      <p class="firstPartTwoP">搜索</p>
+    </view>
+  </view>
+
+
+  <block wx:for="{{searchlawyer}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="threePart" bindtap="toTip">
+
+      <image class="secondPartImg" src="{{item.imgsrc}}"></image>
+      <p class="secondPartP1">{{item.name}}</p>
+      <p class="secondPartP2">
+        <image class="secondPartP2Img" src="../../icon/zls/secondPartP2Img.png"></image>{{item.homeland}}
+      </p>
+      <p class="secondPartP2">
+        <image class="secondPartP3Img" src="../../icon/zls/secondPartP3Img.png"></image> {{item.workspace}}
+      </p>
+
+      <p class="secondPartP4">{{item.thing1}}</p>
+      <p class="secondPartP4">{{item.thing2}}</p>
+      <p class="secondPartP4">{{item.thing3}}</p>
+      <p class="secondPartP4">{{item.thing4}}</p>
+
+    </view>
+  </block>
+
+
+
+
+
+
+</view>

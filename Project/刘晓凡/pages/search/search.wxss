@@ -1,0 +1,89 @@
+/* pages/search/search.wxss */
+.container{
+  background-color: rgb(250, 250, 250);
+}
+.firstPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: #1060ff;
+  margin-top: -110px;
+}
+.search{
+  float: left;
+  width: 80%;
+  height: 100%;
+
+}
+.ser{
+  background-color: white;
+  border-radius: 2px;
+  width: 100%;
+  height: 60%;
+  margin-top: 3.7%;
+  margin-left: 3%;
+
+}
+.search .placeholder-input{font-size: 14px;color: rgb(97, 93, 93);}
+
+.start{
+  float: left;
+  color: white;
+  margin-top: 4.3%;
+  margin-left: 5.3%;
+}
+
+.secondPart{
+  width: 94%;
+  height: 75rpx;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.secondPartImg{
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+.secondPartP{
+  float: left;
+  margin-top: 10px;
+}
+
+.threePart{
+  width: 94%;
+  height: 80rpx;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.threePartOne{
+  float: left;
+  width: 35%;
+  height: 100%;
+  border: 1px solid #1060ff;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+.threePartOneImg{
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: 7.5%;
+  margin-left: 9%;
+}
+.threePartOneP{
+  float: left;
+  color: #1060ff;
+  font-size: 16px;
+  margin-top: 7%;
+  margin-left: 9%;
+}
+.threePartTwoImg{
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: 7.5%;
+  margin-left: 9%;
+}
+

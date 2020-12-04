@@ -1,0 +1,16 @@
+<!--pages/bianji/bianji.wxml-->
+<view class='container'>
+  <view class="secondPart">
+    <p class="secondPartP1">问题描述</p>
+    <textarea bindinput="setdesc" class="secondPartText" placeholder="请输入你要咨询的问题：案件经过、证据情况，以便律师更好为你解答"></textarea>
+    <p class="secondPartP2">限500字</p>
+  </view>
+
+
+  <view class="fourPart" bindtap="toSubmit">
+    <p class="fourPartP" >提交信息</p>
+  </view>
+
+
+  
+</view>

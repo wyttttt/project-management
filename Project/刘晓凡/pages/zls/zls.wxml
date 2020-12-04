@@ -1,0 +1,61 @@
+<!--pages/zls/zls.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <view class="firstPartOne">
+      
+     <p class="firstPartOneP">找律师</p>
+    </view>
+    <view class="firstPartTwo" bindtap="toSearchlawyer">
+      <image class="firstPartTwoImg" src="../../icon/zls/firstPartTwoImg.png"></image>
+    </view>
+
+  </view>
+
+  <!-- <view class="secondPart" bindtap="toLsxq">
+
+    <image class="secondPartImg" src="../../icon/zls/secondPartImg.png"></image>
+    <p class="secondPartP1">张伟律师</p>
+    <p class="secondPartP2">
+      <image class="secondPartP2Img" src="../../icon/zls/secondPartP2Img.png"></image>浙江省 瑞安市
+    </p>
+    <p class="secondPartP2">
+      <image class="secondPartP3Img" src="../../icon/zls/secondPartP3Img.png"></image> 浙江省安瑞事务所
+    </p>
+
+    <p class="secondPartP4">婚姻家庭</p>
+    <p class="secondPartP4">债务债权</p>
+    <p class="secondPartP4">合同纠纷</p>
+    <p class="secondPartP4">法律顾问</p>
+
+  </view> -->
+
+  <block wx:for="{{content}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="threePart" id="{{item.id}}"  bindtap="toLsxq">
+
+      <image class="secondPartImg" src="{{item.imgsrc}}"></image>
+      <p class="secondPartP1">{{item.name}}</p>
+      <p class="secondPartP2">
+        <image class="secondPartP2Img" src="../../icon/zls/secondPartP2Img.png"></image>{{item.homeland}}
+      </p>
+      <p class="secondPartP2">
+        <image class="secondPartP3Img" src="../../icon/zls/secondPartP3Img.png"></image> {{item.workspace}}
+      </p>
+
+      <p class="secondPartP4">{{item.thing1}}</p>
+      <p class="secondPartP4">{{item.thing2}}</p>
+      <p class="secondPartP4">{{item.thing3}}</p>
+      <p class="secondPartP4">{{item.thing4}}</p>
+
+    </view>
+  </block>
+
+  <!-- <block wx:for="{{content}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="threePart">
+
+      <p class="ThreePartP1">{{item.name}}+{{item.imgsrc}}</p>
+
+    </view>
+  </block> -->
+
+</view>

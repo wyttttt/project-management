@@ -1,0 +1,19 @@
+/* pages/find/find.wxss */
+button{
+  width:350px;
+  color:lightblue;
+  background-color: #fff;
+  border:0.5px grey solid;
+  margin-top: 10px;
+}
+button image{
+  height:30px;
+  width:30px;
+}
+.faxian{
+  width: 100%;
+  height:100px;
+  text-align: center;
+  background-color: rgb(6, 100, 224);
+  color:white;
+}

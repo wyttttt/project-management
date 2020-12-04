@@ -1,0 +1,40 @@
+<!--pages/search/search.wxml-->
+
+<view class="container">
+
+  <view class="firstPart">
+
+    <view class="search">
+  
+      <input class="ser" placeholder-class="placeholder-input" type="text" placeholder="　在这里搜索" 
+      value="{{name}}"
+      bindinput="talks"
+      />
+    
+    </view>
+
+    <view class="start" bindtap="oks">
+      <p>搜索</p>
+    </view>
+
+  </view>
+
+  <view class="secondPart">
+    <image class="secondPartImg" src="../../icon/Vline.png"></image>
+    <p class="secondPartP">指定内容推荐</p>
+  </view>
+
+  <view class="threePart">
+    <view class="threePartOne" bindtap="toZls">
+      <image class="threePartOneImg" src="../../icon/search/threePartOneImg.png"></image>
+      <p class="threePartOneP">律师搜索</p>
+    </view>
+    <view class="threePartOne" bindtap="toDxws">
+      <image class="threePartOneImg" src="../../icon/search/threePartTwoImg.png"></image>
+      <p class="threePartOneP">合同文书</p>
+    </view>
+
+  </view>
+
+
+</view>

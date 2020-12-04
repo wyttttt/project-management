@@ -1,0 +1,167 @@
+/* pages/lsxq/lsxq.wxss */
+.container{
+  background-color: rgb(250, 250, 250);
+}
+
+.firstPart{
+  width: 100%;
+  height: 160px;
+  margin-top: -25%;
+  background-color: white;
+}
+.firstPartOne{
+  float: left;
+  width: 25%;
+  height: 100%;
+  /* background-color: antiquewhite; */
+}
+.firstPartImg{
+  float: left;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  /* background-color: rgb(243, 223, 243); */
+  margin: 10%;
+}
+.firstPartP1{
+  float: left;
+  width: 71%;
+  /* background-color: tomato; */
+  margin-top: 5%;
+  margin-left: 2%;
+  font-weight: bold;
+
+}
+.firstPartP2{
+  float: left;
+  width: 71%;
+  margin-left: 2%;
+  margin-top: 1%;
+  font-size: 15px;
+  color: orange;
+
+}
+.firstPartP3{
+  float: left;
+  width: 71%;
+  margin-left: 2%;
+  margin-top: 1%;
+  /* background-color: orange; */
+
+}
+.firstPartP3Img{
+  float: left;
+  width: 22px;
+  height: 25px;
+}
+.firstPartP4{
+  float: left;
+  font-size: 15px;
+  color: rgb(105, 105, 105);
+  border: 1px solid rgb(105, 105, 105);
+  width: 135rpx;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 1.5%;
+
+  
+}
+.secondPart {
+
+  width: 100%;
+  /* height: 75rpx; */
+  background-color: white;
+  margin-top: 20px;
+
+}
+.secondPartImg2 {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 4%;
+
+}
+.secondPartImg {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 4%;
+  margin-bottom: 7%;
+}
+
+.secondPartP {
+  float: left;
+  width: 88%;
+  margin-top: 10px;
+  /* background-color: aqua; */
+}
+.secondPartP2{
+  float: left;
+  /* background-color: aquamarine; */
+  margin-top: 2%;
+  margin-left: 4%;
+  width: 92%;
+  margin-bottom: 3%;
+  font-size: 15px;
+  color: rgb(49, 49, 49);
+}
+.threePart{
+  width: 95%;
+  float: left;
+  margin-top: -2%;
+  margin-left: 4%;
+  margin-bottom: 5%;
+  /* background-color: rgb(255, 0, 0); */
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.threePartOne{
+  float: left;
+  width: 45px;
+  height: 45px;
+  background-color: #1060ff;
+  border-radius: 50%;
+  margin: 1%;
+}
+.threePartImg{
+  float: left;
+  width: 35px;
+  height: 35px;
+  margin: 10%;
+}
+.threePartP1{
+  float: left;
+  width: 80%;
+  margin-top: 0.8%;
+  margin-left: 2%;
+  /* background-color: seagreen; */
+}
+.threePartP2{
+  float: left;
+  width: 80%;
+  font-size: 14px;
+  color: #616161;
+  margin: 2%;
+}
+.threePartP3{
+  float: left;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.fourPart{
+  float: left;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 110rpx;
+  background-color: #1060ff;
+  text-align: center;
+  line-height: 110rpx;
+}
+.fourPartP{
+  color: white;
+  font-size: 17px;
+}
+
+

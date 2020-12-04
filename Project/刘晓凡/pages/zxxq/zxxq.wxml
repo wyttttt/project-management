@@ -1,0 +1,67 @@
+<!--pages/zxxq/zxxq.wxml-->
+<view class="container">
+
+  <!-- <view class="sevenPart">
+      <image class="sevenPartImg" src="{{item.cpage}}"></image>
+      <p class="sevenPartP1">wHy</p>
+      <p class="sevenPartP2">2020-11-30 06:01</p>
+      <view class="sevenPartTwo">
+        <p class="sevenPartTwoP">这是问题这是问题这是问题这是问题这是问题这是问题这是问题这是问题这是问题这是问题</p>
+
+      </view>
+    </view>
+
+    <view class="secondPart">
+      <image class="secondPartImg" src="../../icon/zcgs/secongPartImg.png"></image>
+      <p class="secondPartP">律师回复</p>
+      
+    </view>
+
+    <view class="threePart">
+      <image class="threePartImg" ></image>
+      <p class="threePartP1">张伟律师</p>
+      <p class="threePartP2">2020-11-30 15:18</p>
+      <p class="threePartP3">这事回复这是回复这是回复这是回复</p>
+      
+    </view> -->
+    
+
+  <block wx:for="{{answer}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="sevenPart">
+      <image class="sevenPartImg" src="{{item.imgsrc}}"></image>
+      <p class="sevenPartP1">{{item.name}}</p>
+      <p class="sevenPartP2">{{item.date}}</p>
+      <view class="sevenPartTwo">
+        <p class="sevenPartTwoP">{{item.text}}</p>
+
+      </view>
+    </view>
+    <view class="secondPart">
+      <image class="secondPartImg" src="../../icon/zcgs/secongPartImg.png"></image>
+      <p class="secondPartP">律师回复</p>
+      
+    </view>
+    
+    <view class="threePart">
+      <image class="threePartImg" src="{{item.csrc1}}"></image>
+      <p class="threePartP1">{{item.cname1}}</p>
+      <p class="threePartP2">{{item.cdate1}}</p>
+      <p class="threePartP3">{{item.ctext1}}</p>
+    </view>
+    <view class="threePart">
+      <image class="threePartImg" src="{{item.csrc2}}"></image>
+      <p class="threePartP1">{{item.cname2}}</p>
+      <p class="threePartP2">{{item.cdate2}}</p>
+      <p class="threePartP3">{{item.ctext2}}</p>
+    </view>
+    <view class="threePart">
+      <image class="threePartImg" src="{{item.csrc3}}"></image>
+      <p class="threePartP1">{{item.cname3}}</p>
+      <p class="threePartP2">{{item.cdate3}}</p>
+      <p class="threePartP3">{{item.ctext3}}</p>
+    </view>
+
+
+  </block>
+
+</view>

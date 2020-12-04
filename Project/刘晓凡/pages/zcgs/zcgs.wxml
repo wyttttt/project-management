@@ -1,0 +1,19 @@
+<!--pages/zcgs/zcgs.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <image class="firstPartImg" src="../../icon/zcgs/firstPartImg.png"></image>
+  </view>
+
+  <view class="secondPart">
+    <image class="secondPartImg" src="../../icon/zcgs/secongPartImg.png"></image>
+    <p class="secondPartP">众筹列表</p>
+
+  </view>
+
+  <view class="threePart">
+    
+  </view>
+
+
+</view>

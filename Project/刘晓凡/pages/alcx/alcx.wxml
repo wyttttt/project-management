@@ -1,0 +1,43 @@
+<!--pages/alcx/alcx.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <view class="firstPartOne">
+      <p class="firstPartOneP1">案例</p>
+    </view>
+    <view class="firstPartOne">
+      <p class="firstPartOneP1">法规</p>
+    </view>
+
+  </view>
+
+  <view class=" secondPart">
+    <image class="secondPartImg" src="../../icon/alcx/secondPartImg.png"></image>
+    <input class="secondPartI" type="text" bindinput="setcase" placeholder="在案例库中搜索" />
+    <p class="secondPartP" bindtap="getcase">搜索</p>
+  </view>
+
+  <!-- <view class="threePart">
+    <p class="threePartP1">汇通信诚组吉林有限公司UI师傅呢个融资租赁合同纠纷发个红包课件案</p>
+    <p class="threePartP2">《中华人民共和国合同法》
+      第一百一十四条、第二百四十八条、《最高人民法院关于审理融资阻力你和他遍地撒空间会丢失的》ID干撒帝豪斯U盾hi就US会丢安徽的及哦啊近段时间是我哦锯掉借书的静安寺及哦啊</p>
+    <view class="threePartTwo">
+      <p class="threePartP3">河北省石家庄市中级人民法院</p>
+      <p class="threePartP4">2018-11-20 17:25:58</p>
+    </view>
+  </view> -->
+
+
+
+  <block wx:for="{{case}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="threePart">
+      <p class="threePartP1">{{item.title}}</p>
+      <p class="threePartP2">{{item.content}}</p>
+      <view class="threePartTwo">
+        <p class="threePartP3">{{item.court}}</p>
+        <p class="threePartP4">{{item.date}}8</p>
+      </view>
+    </view>
+  </block>
+
+</view>

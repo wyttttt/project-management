@@ -1,0 +1,40 @@
+<!--pages/fyjs/fyjs.wxml-->
+<view class="container">
+
+<view class="firstPart">
+  <p>选择查询内容</p>
+</view>
+
+<view class="secondPart"  bindtap="toLsfcx">
+  <view class="secondPartIcon">
+    <image class="secondPartImg" src="../../icon/fyjs/secondPartImg.png"></image>
+  </view>
+  <p class="secondPartP1">律师费查询</p>
+  <p class="secondPartP2">快速查询律师费，心里有底</p>
+</view>
+
+<view class="secondPart" bindtap="toTip">
+  <view class="threePartIcon">
+    <image class="threePartImg" src="../../icon/fyjs/threePartImg.png"></image>
+  </view>
+  <p class="secondPartP1">诉讼费查询</p>
+  <p class="secondPartP2">暂未开放</p>
+</view>
+
+<view class="secondPart" bindtap="toTip">
+  <view class="threePartIcon">
+    <image class="fourPartImg" src="../../icon/fyjs/fourPartImg.png"></image>
+  </view>
+  <p class="secondPartP1">交通事故</p>
+  <p class="threePartP2">暂未开放</p>
+</view>
+
+<view class="secondPart" bindtap="toTip">
+  <view class="threePartIcon">
+    <image class="fivePartImg" src="../../icon/fyjs/fivePartImg.png"></image>
+  </view>
+  <p class="secondPartP1">工伤赔偿</p>
+  <p class="threePartP2">暂未开放</p>
+</view>
+
+</view>

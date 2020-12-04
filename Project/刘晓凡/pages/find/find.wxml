@@ -1,0 +1,12 @@
+<!--pages/find/find.wxml-->
+<view class="faxian">发现</view>
+  <button bindtap="goTolsq">
+  <image src='/icon/lvshiquan.png'></image>
+  律师圈</button>
+<button bindtap="goTophb">
+  <image src='/icon/paihangbang.png'></image>
+  排行榜</button>
+<button bindtap="goTohzj">
+  <image src='/icon/huzhujin.png'></image>
+  互助金</button>
+ 

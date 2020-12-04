@@ -1,0 +1,65 @@
+<!--pages/lsxq/lsxq.wxml-->
+<view class="container">
+
+  <block wx:for="{{lawyer}}" wx:key="yyy" data-item="item" wx:for-index="index">
+
+    <view class="firstPart">
+      <view class="firstPartOne">
+        <image class="firstPartImg" src="{{item.imgsrc}}"></image>
+      </view>
+
+      <p class="firstPartP1">{{item.name}}</p>
+      <p class="firstPartP2">{{item.worktime}}</p>
+      <p class="firstPartP3">
+        <image class="firstPartP3Img" src="../../icon/lsxq/firstPartP3Img.png"></image>{{item.workspace}}
+      </p>
+
+      <p class="firstPartP4">{{item.thing1}}</p>
+      <p class="firstPartP4">{{item.thing2}}</p>
+      <p class="firstPartP4">{{item.thing3}}</p>
+      <p class="firstPartP4">{{item.thing4}}</p>
+
+
+
+    </view>
+
+    <view class="secondPart">
+      <image class="secondPartImg2" src="../../icon/Vline.png"></image>
+      <p class="secondPartP">律师简介</p>
+
+      <p class="secondPartP2">{{item.lawyertext}}</p>
+    </view>
+
+    <view class="secondPart">
+      <image class="secondPartImg" src="../../icon/Vline.png"></image>
+      <p class="secondPartP">律师评价(好评率{{item.praiserate}}%)</p>
+
+      <view class="threePart">
+        <view class="threePartOne">
+          <image class="threePartImg" src="../../icon/lsxq/threePartImg.png"></image>
+        </view>
+
+        <p class="threePartP1">{{item.user1}}</p>
+        <p class="threePartP2">{{item.userdate1}}</p>
+        <p class="threePartP3">{{item.usertext1}}</p>
+      </view>
+
+      <view class="threePart">
+        <view class="threePartOne">
+          <image class="threePartImg" src="../../icon/lsxq/threePartImg.png"></image>
+        </view>
+
+        <p class="threePartP1">{{item.user2}}</p>
+        <p class="threePartP2">{{item.userdate2}}</p>
+        <p class="threePartP3">{{item.usertext2}}</p>
+      </view>
+
+
+    </view>
+
+
+  </block>
+  <view class="fourPart" bindtap="get">
+    <p class="fourPartP">{{mes}}</p>
+  </view>
+</view>

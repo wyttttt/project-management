@@ -1,0 +1,80 @@
+/* pages/phb/phb.wxss */
+/* pages/jdb/jdb.wxss */
+.phb{
+  width: 100%;
+  height:50px;
+  text-align: center;
+  background-color: rgb(6, 100, 224);
+  color:white;
+}
+.phb button{
+  color:white;
+  font-size:20;
+  font-weight: 400;
+}
+.phb image{
+  width:20px;
+  height:20px;
+}
+/* pages/lsq/lsq.wxss */
+.lsq{
+  width: 100%;
+  height:70px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #4481ff;
+  color:white;
+  padding:20px;
+}
+.lsq image{
+  width:20px;
+  height:20px;
+}
+.top{
+  height:60px;
+  text-align: center;
+  color:white;
+  position: relative;
+  background-color: white;
+  padding:5px;
+}
+.top button{
+  background-color: white;
+  /* position: absolute; */
+  float:left;
+  top:0px;
+  border-bottom: grey;
+}
+/* .top image{
+  color:white;
+  width:20px;
+  height:20px;
+} */
+.div{
+  height:150px;
+  margin:10px;
+  border:0.5px grey solid;
+  border-radius:5%;
+  padding:20px;
+}
+.div image{
+  height:70px; 
+  width:70px;
+  border-radius:50%;
+}
+.inf{
+  /* float:right; */
+  position: relative;
+  left:90px;
+  bottom:70px;
+}
+.inf li{
+  border:1px grey solid;
+}
+.tab image{
+  width:15px;
+  height:15px;
+}
+.tab li{
+  display: inline-block;
+}

@@ -1,0 +1,170 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class="firstPart">
+
+    <view class="iphone" bindtap="handleTip">
+      <image class="iph" src="../../icon/index/iphone.png"></image>
+    </view>
+
+    <view class="search" bindtap="toSearch">
+      <view class="searchV">
+        <p class="searchP">在这里搜索</p>
+      </view>
+    </view>
+
+    <view class="infor" bindtap="toTipNone">
+      <image class="iph" src="../../icon/index/inf.png"></image>
+    </view>
+
+  </view>
+
+  <view class="secondPart">
+
+    <view class="secondPartOne" bindtap="toInquiry">
+      <view class="secondPartOneIcon">
+        <image class="secondPartOneIconImg" src="../../icon/index/secondPartOneIcon.png"></image>
+      </view>
+      <p class="secondPartOneP1">
+        我要咨询
+      </p>
+      <p class="secondPartOneP2">
+        极速解决问题
+      </p>
+    </view>
+
+    <view class="secondPartOne" bindtap="toTip">
+      <view class="secondPartTwoIcon">
+        <image class="secondPartTwoIconImg" src="../../icon/index/secondPartTwoIcon.png"></image>
+      </view>
+      <p class="secondPartOneP1">
+        案件委托
+      </p>
+      <p class="secondPartOneP2">
+        委托律师代理
+      </p>
+    </view>
+
+    <view class="secondPartOne" bindtap="toTip">
+      <view class="secondPartThreeIcon">
+        <image class="secondPartThreeIconImg" src="../../icon/index/secondPartThreeIcon.png"></image>
+      </view>
+      <p class="secondPartOneP1">
+        法律互助
+      </p>
+      <p class="secondPartOneP2">
+        互助资金援助
+      </p>
+    </view>
+
+    <view class="secondPartOne" bindtap="toZcgs">
+      <view class="secondPartFourIcon">
+        <image class="secondPartFourIconImg" src="../../icon/index/secondPartFourIcon.png"></image>
+      </view>
+      <p class="secondPartOneP1">
+        众筹官司
+      </p>
+      <p class="secondPartFourP2">
+        众筹援助
+      </p>
+    </view>
+
+
+
+  </view>
+
+  <view class="threePart">
+
+    <view class="threePartOne" bindtap="toZls">
+      <image class="threePartOneImg" src="../../icon/index/threePartOneImg.png"></image>
+      <p class="threePartOneP">
+        找律师
+      </p>
+    </view>
+
+    <view class="threePartOne" bindtap="toDxws">
+      <image class="threePartOneImg" src="../../icon/index/threePartTwoImg.png"></image>
+      <p class="threePartTwoP">
+        代写文书
+      </p>
+    </view>
+
+    <view class="threePartOne" bindtap="toAlcx">
+      <image class="threePartOneImg" src="../../icon/index/threePartThreeImg.png"></image>
+      <p class="threePartTwoP">
+        案例查询
+      </p>
+    </view>
+
+    <view class="threePartOne" bindtap="toFyjs">
+      <image class="threePartOneImg" src="../../icon/index/threePartFourImg.png"></image>
+      <p class="threePartTwoP">
+        费用计算
+      </p>
+    </view>
+
+  </view>
+
+  <view class="fourPart" bindtap="toInquiry">
+
+    <image class="fourPartImg" src="../../icon/index/fourPartImg.png"></image>
+    <p class="fourPartP1">免费咨询台</p>
+    <p class="fourPartP2">点击咨询，多名律师为您解答</p>
+
+
+
+  </view>
+
+  <view class="fivePart" bindtap="toTip">
+    <image class="fivePartImg" src="../../icon/index/fivePartImg.png"></image>
+    <p class="fivePartP">法律知识援助讲座</p>
+  </view>
+
+  <view class="sixPart">
+    <image class="sixPartImg" src="../../icon/Vline.png"></image>
+    <p class="sixPartP">用户咨询区</p>
+  </view>
+
+  <!-- <view class="sevenPart"  bindtap="toZxxq">
+    <image class="sevenPartImg"
+      src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=984884737,1538802678&fm=11&gp=0.jpg"></image>
+    <p class="sevenPartP1">糖豆</p>
+    <p class="sevenPartP2">2020-11-23 07:58</p>
+    <view class="sevenPartTwo">
+      <p class="sevenPartTwoP">一个智力残障4级的老人 刚被收监一年 现在家属被通知犯认什一个智力残障4级的老人 刚被收监一年 现在家属被通知犯认病死 抢救无效死亡 还给列了一堆病情 生前在家里是没有什么病的
+        家属也怀疑真实情况 这个可以申请赔偿吧</p>
+
+    </view>
+    <view class="sevenPartThree">
+      <p class="sevenPartThreeP">一般刑事</p>
+      <p class="sevenPartThreeP2" >
+        <image class="sevenPartThreeP2Img" src="../../icon/index/sevenPartThreeP2Img.png"></image>
+        2人回答
+      </p>
+    </view>
+
+  </view> -->
+
+  <block wx:for="{{users}}" wx:key="yyy" data-item="item" wx:for-index="index" >
+    <view class="sevenPart" id="{{item.id}}"  bindtap="toZxxq">
+      <image class="sevenPartImg"
+        src="{{item.imgsrc}}"></image>
+      <p class="sevenPartP1">{{item.name}}</p>
+      <p class="sevenPartP2">{{item.date}}</p>
+      <view class="sevenPartTwo">
+        <p class="sevenPartTwoP">{{item.text}}</p>
+
+      </view>
+      <view class="sevenPartThree">
+        <p class="sevenPartThreeP">{{item.type}}</p>
+        <p class="sevenPartThreeP2">
+          <image class="sevenPartThreeP2Img" src="../../icon/index/sevenPartThreeP2Img.png"></image>
+          {{item.number}}人回答
+        </p>
+
+      </view>
+
+    </view>
+  </block>
+
+</view>

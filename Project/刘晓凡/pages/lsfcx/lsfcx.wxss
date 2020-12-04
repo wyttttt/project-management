@@ -1,0 +1,16 @@
+/* pages/lsfcx/lsfcx.wxss */
+.container{
+  background-color: rgb(250, 250, 250);
+}
+.firstPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  margin-top: -110px;
+}
+.firstPartP{
+  width: 100%;
+  float: left;
+  margin: 3.8%;
+  color: #747475;
+}
