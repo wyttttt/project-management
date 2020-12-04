@@ -95,7 +95,7 @@ app.post('/updatelawyer',async c=>{
 	    c.send('修改操作failed',400)
     }
 })
-//关注
+//关注律师
 app.post('/updatelawyer1/:id',async c=>{
     try{
         let id = c.param.id;
@@ -108,7 +108,7 @@ app.post('/updatelawyer1/:id',async c=>{
 	    c.send('查询操作failed'+err.message,400)
     }
 })
-//取关
+//取关律师
 app.post('/updatelawyer2/:id',async c=>{
     try{
         let id = c.param.id;
@@ -121,7 +121,7 @@ app.post('/updatelawyer2/:id',async c=>{
 	    c.send('查询操作failed'+err.message,400)
     }
 })
-//查看关注的人
+//查看关注的律师
 app.get('/looklawyer',async c=>{
     try{
 	    let sql = 'SELECT * FROM lawyer where likes = 0'
@@ -287,11 +287,12 @@ app.get('/thing/:id',async c=>{
     }
 })
 //案例表以上 thing
+
 //律师圈以下 lawyer_circle
 //查所有人信息
 app.get('/lawyer_circle',async c=>{
     try{
-	    let sql = 'SELECT * FROM lawyer_circle order by id asc'
+	    let sql = 'SELECT * FROM lawyer_circle order by id desc'
 	    let result = await pdb.query(sql)
 	    if(result.rowCount<=0){
 	        c.send('failed register',400)
@@ -302,6 +303,7 @@ app.get('/lawyer_circle',async c=>{
 	    c.send('查询操作failed'+err.message,400)
     }
 })
+//发布律师圈
 app.post('/addlawyer_circle/:text',async c=>{
     try{
         //获取当前数据库最大id 以便插入
