@@ -1,0 +1,65 @@
+<!--index.wxml-->
+  <view class="faxian">发现</view>
+  <button bindtap="goTolsq">
+  <image src='/icon/lvshiquan.png'></image>
+  律师圈</button>
+<button bindtap="goTophb">
+  <image src='/icon/paihangbang.png'></image>
+  排行榜</button>
+<button bindtap="goTohzj">
+  <image src='/icon/huzhujin.png'></image>
+  互助金</button>
+
+<!-- <view class='container'>
+  <form bindsubmit="submitData">
+    <input type="text" bindinput="writeTitle" name="content" placeholder="请输入标题" style="border:0.1px gray solid"></input>
+    <textarea type="text" bindinput="writeText" name="text" placeholder="请输入内容" style="border:0.1px gray solid;margin-top:10px"></textarea>
+    <button form-type="submit" bindinput="submitData">提交</button>
+  </form>
+</view> -->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- <view class="container">
+<navigator url="/pages/editor/editor" open-type="navigate" style="margin:20rpx">
+富文本编辑
+</navigator>
+<view class="container">
+  <navigator url='/pages/home/home' open-type="switchTab">
+  Go Home
+  </navigator>
+<image url="{{myHeadImage}}" mode="aspectFit"></image>
+  <button bindtap="selectImage">选择图片</button>
+  <view>
+    <image src="{{imagePath}}" mode="widthFix"></image>
+  </view>
+</view>
+</view>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data> -->
+
+
+
+<!-- <view class="container" style="padding:8rpx;text-align:center;">
+  <camera device-position="back" style="eidth:100%;height:450rpx;margin-bottom:15rpx"></camera>
+  <button bindtap="takePhoto">拍照</button>
+</view> -->
+<!-- <view class="container" style="text-align:center;">
+  <image src="{{photoPath}}" mode="widthFix"></image>
+</view> -->
+
+<!-- <navigator 
+  url="/pages/canvas/canvas"
+  open-type="navigate "
+  style="margin:20rpx;">
+canvas
+</navigator> -->

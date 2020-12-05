@@ -1,0 +1,39 @@
+/**index.wxss**/
+button{
+  width:350px;
+  color:lightblue;
+  background-color: #fff;
+  border:0.5px grey solid;
+  margin-top: 10px;
+}
+button image{
+  height:30px;
+  width:30px;
+}
+.faxian{
+  width: 100%;
+  height:100px;
+  text-align: center;
+  background-color: rgb(6, 100, 224);
+  color:white;
+}
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
