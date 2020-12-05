@@ -1,0 +1,10 @@
+<!--pages/bianji/bianji.wxml-->
+<view class='container'>
+  <form bindsubmit="submitData">
+    <textarea type="text" bindinput="writeText" name="text" placeholder="请输入要发布的内容" style="border:0.1px gray solid;margin-top:10px"></textarea>
+    <!-- <view class="container">
+      <button bindtap="chooseImageTap" style="position:relative;bottom:200px;">上传图片</button>
+    </view> -->
+    <button form-type="submit" bindtap="submitData" style="position:relative;bottom:100px;">发布动态</button>
+  </form>
+</view>

@@ -1,0 +1,7 @@
+/* pages/bianji/bianji.wxss */
+textarea{
+    width:400px;
+    height:200px;
+    position: relative;
+    bottom:100px;
+}
