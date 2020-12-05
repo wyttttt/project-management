@@ -1,0 +1,33 @@
+3.法规表：create table Statue (Slegalname varchar(20) not null,Stimeliness varchar(10) not null,Schapter varchar(10),Schaptername varchar(20),Snumber varchar(8),Stext text not null,primary key(Slegalname,Schapter,Snumber));
+insert into Statue (Slegalname,Stimeliness,Schapter,Schaptername,Snumber,Stext) values('刑法','现行有效','第二章','犯罪','第十四条','故意犯罪 明知自己的行为会发生危害社会的结果，并且希望或放任这种结果发生，因而构成犯罪的，是故意犯罪。故意犯罪，应当负刑事责任');
+4排行榜
+好评榜： 
+create table highPrise(Hname varchar(20) primary key,Hpage varchar(255),Haddress varchar(20),Hyear text,Htype text,Hfrequency text,Hprise text);
+insert into highprise(hname,hpage,haddress,hyear,htype,hfrequency,hprise) values('陈星律师','https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00447-1108.jpg','北京 朝阳区','执业2年','一般民事 婚姻家庭','5000','100');
+insert into highprise(hname,hpage,haddress,hyear,htype,hfrequency,hprise) values('陈星星律师','https://dpic.tiankong.com/m3/c3/QJ6806576395.jpg','北京 朝阳区','执业2年','一般民事 法律顾问 合同纠纷','4500','99');
+insert into highprise(hname,hpage,haddress,hyear,htype,hfrequency,hprise) values('李俊熙律师','https://dpic.tiankong.com/jw/5g/QJ6421472157.jpg','天津 和平区','执业2年','法律顾问 经济犯罪 劳动仲裁','4400','95');
+insert into highprise(hname,hpage,haddress,hyear,htype,hfrequency,hprise) values('张伟律师','https://dpic.tiankong.com/jw/5g/QJ6421472157.jpg','天津 津南区','执业1年','交通事故 股权纠纷','3800','90');
+insert into highprise(hname,hpage,haddress,hyear,htype,hfrequency,hprise) values('吕一波律师','https://dpic.tiankong.com/l6/z8/QJ6191887474.jpg@!350h','石家庄市 桥西区','执业半年','法律顾问 一般民事','4200','88');
+解答榜：
+create table answerList(Aname varchar(20) primary key,Apage varchar(255),Aaddress varchar(20),Ayear varchar(30),Atype text,Afrequency int,Aprise int);
+insert into answerList (aname,apage,aaddress,ayear,atype,afrequency,aprise) values('阿巴律师','https://p.qqan.com/up/2020-11/16043013516739088.jpg','浙江省 瑞安市','执业1年','婚姻家庭 债务债权 合同纠纷 法律顾问','12529',' 100%');
+insert into answerList (aname,apage,aaddress,ayear,atype,afrequency,aprise) values('于学良律师','https://p.qqan.com/up/2020-11/16043013515030164.jpg','上海市 浦东新区','执业1年','经济仲裁 债权债务 合同纠纷 一般刑事 法律顾问','5331',100%);
+insert into answerList (aname,apage,aaddress,ayear,atype,afrequency,aprise) values('平台律师','https://p.qqan.com/up/2020-11/16043013508116636.jpg','上海市 徐汇区','执业2年','消费权益',5331,98%);
+insert into answerList (aname,apage,aaddress,ayear,atype,afrequency,aprise) values('田其锐律师','https://p.qqan.com/up/2020-11/16043013519931029.jpg','上.海市 ..东新区''执业1年','一般民事 刑事 法律顾问',5001,100%);
+insert into answerList (aname,apage,aaddress,ayear,atype,afrequency,aprise) values('吴树红律师','https://p.qqan.com/up/2020-8/20208241541505513.jpg','北京市 朝阳区','执业1年','一般民事 婚姻家庭 劳动仲裁 合同纠纷 刑事辩护',85,100%);
+5律师圈：
+create table lawyer_circle(id int,name char(20),imgsrc char(150),date char (30),article text,fenxiang_num int,pinglun_num int,pinglun text,zan_num int);
+INSERT INTO lawyer_circle
+VALUES (0,'孙航林律师','https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=157110003,2932529084&amp;fm=26&amp;gp=0.jpg','2020-09-22 22:03','对律 师的解答相互进行屏蔽，律师看不到其他律师的解答，还是很有必要的。这样可以避免一方面为当事人解答，另一方面还在被动带徒弟'
+,0,3,'{"我被父母造成残疾人","是否可以人权维权","我赞成阿！！！！"}',1);
+INSERT INTO lawyer_circle
+VALUES (1,'187****2604','https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3055470746,2873588180&amp;fm=26&amp;gp=0.jpg','2020-11-15 22:05','律 师你好，我想咨询一下，15年的时候用借名买房的方式在北京买了一套房子，我的名字，实际拥有人是我的姐姐。19年初，姐姐把我告上法庭。20年初法院得出结果是让我配合过户。我很配合地去过户。然后赶上疫情，过户的方式是强制执行。想告姐姐给我一些赔偿款。您看我这个官司赢得几率大嘛？'
+,0,0,'{}',0);
+
+
+
+
+6.互助金里面的申请记录：
+create table applicationCord(Ctype varchar(10),Ctext text,Cmoney varchar(8),Cpage varchar(255),primary key(Ctype,Ctext));
+
+insert into tablename values(imgsrc:"https://p.qqan.com/up/2020-11/202011261454136141.jpg");
