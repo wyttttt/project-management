@@ -1,0 +1,10 @@
+<!--pages/question/question.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img1" bindtap="toSz" src="/images/fanhui1.png"></image>
+    <text class="p1">常见问题</text>
+  </view>
+  <view class="v1" bindtap="toFirst">想咨询律师问题？</view>
+  <view class="v1">免费咨询有律师回复吗？</view>
+  <view class="v1">电话咨询律师没有回电怎么办？</view>
+</view>
