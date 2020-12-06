@@ -1,0 +1,21 @@
+<!--pages/money/money.wxml-->
+<view>
+  <view class="tittle">
+    <image class="img1" bindtap="toIndex" src="/images/fanhui1.png"></image>
+    <text class="pp">我的钱包</text>
+  </view>
+  <view class="v1">
+    <text class="p1">我的余额</text>
+    <text class="p2">0元</text>
+    <view class="p3">充值</view>
+    <view class="p4">提现</view>
+  </view>
+  <view class="v2">
+    <text class="p5">本月\n</text>
+    <text space="emsp" class="p6">收益：0元   支出：0元</text>
+  </view>
+  <view class="v3">
+    暂无数据
+  </view>
+</view>
+

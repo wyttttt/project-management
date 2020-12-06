@@ -1,0 +1,93 @@
+/* pages/money/money.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tittle{
+  width: 100%;
+  height: 100rpx;
+  background-color: #4481ff;
+  text-align: center;
+  border-bottom: 2rpx #cbcbcb solid;
+}
+.img1{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  right: 250rpx;
+  top: 20rpx;
+}
+.pp{
+  color: white;
+  position: relative;
+  top: 10rpx;
+  font-size: large;
+}
+.v1{
+  width: 80%;
+  height: 300rpx;
+  background-color: #4481ff;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30rpx;
+  margin-left: 80rpx;
+}
+.v1 text{
+  display: block;
+}
+.p1{
+  position: relative;
+  top: 30rpx;
+  left: 40rpx;
+}
+.p2{
+  position: relative;
+  top: 80rpx;
+  left: 40rpx;
+  font-size: x-large;
+}
+.p3{
+  display: block;
+  border: 2rpx #cbcbcb solid;
+  width: 100rpx;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  top: 120rpx;
+  left: 30rpx;
+}
+.p4{
+  display: block;
+  border: 2rpx #cbcbcb solid;
+  width: 100rpx;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  top: 80rpx;
+  left: 160rpx;
+}
+.v2{
+  width: 100%;
+  height: 100rpx;
+  border-top: 2rpx #cbcbcb solid;
+  border-bottom: 2rpx #cbcbcb solid;
+  margin-top: 60rpx;
+}
+.p5{
+  position: relative;
+  left: 40rpx;
+  top: 10rpx;
+}
+.p6{
+  position: relative;
+  left: 40rpx;
+  color: gray;
+  font-size: small;
+  top: 20rpx;
+}
+.v3{
+  text-align: center;
+  margin-top: 40rpx;
+}
