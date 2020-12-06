@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index">个人中心</view>
+  <view class="user">
+    <image class="img1" src="/images/xinfeng.png"></image>
+    <image class="img2" src="/images/touxiang.png"></image>
+    <button class="but" bindtap="toUser">{{usr}}</button>
+    <image bindtap="toOne" class="img3" src="/images/fanhui.png"></image>
+  </view>
+  <view class="info">
+    <li class="info1">
+      <text class="p1">0元\n</text>
+      <text class="p2">账户余额</text>
+    </li>
+    <li class="info2">
+      <text class="p1">0元\n</text>
+      <text class="p2">邀请奖励</text>
+    </li>
+  </view>
+  <view bindtap="toMoney" class="v1">
+    <image class="img4" src="/images/qianbao.png"></image>
+    <text class="t1">我的钱包</text>
+  </view>
+  <view bindtap="toZixun" class="v1">
+    <image class="img4" src="/images/zixun.png"></image>
+    <text class="t1">我的咨询</text>
+  </view>
+  <view class="v1" bindtap="submit">
+    <image class="img4" src="/images/shoucang1.png"></image>
+    <text class="t1">我的关注</text>
+  </view>
+  <view class="v1" bindtap="toWt">
+    <image class="img4" src="/images/weituo.png"></image>
+    <text class="t1">我的委托</text>
+  </view>
+  <view class="v1" bindtap="toSz">
+    <image class="img4" src="/images/shezhi.png"></image>
+    <text class="t1">设置</text>
+  </view>
+  <view class="buttom">
+    <li>
+      <image class="img5" src="/images/shoucang.png"></image>
+      <span class="t2">首页</span>
+    </li>
+    <li>
+      <image class="img5" src="/images/shoucang.png"></image>
+      <span class="t2">发现</span>
+    </li>
+    <li>
+      <image class="img5" src="/images/shoucang.png"></image>
+      <span class="t2">我的</span>
+    </li>
+  </view>
+</view>
