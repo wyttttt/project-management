@@ -1,0 +1,18 @@
+<!--pages/zixun/zixun.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img" bindtap="toIndex" src="/images/fanhui1.png"></image>
+    <text class="p1">我的咨询</text>
+  </view>
+  <view class="v1">
+    <view class="box">
+      <image class="img1" src="/images/touxiang1.png"></image>
+      <text class="tel">166****5797</text>
+      <text class="time">2020-12-03   10:24</text>
+      <text class="info">撞车后如何解决</text>
+      <view class="type">一般刑事</view>
+      <image class="img2" src="/images/huifu.png"></image>
+      <text class="res">0人回答</text>
+    </view>
+  </view>
+</view>
