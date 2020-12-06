@@ -1,0 +1,32 @@
+<!--pages/shoucang/shoucang.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image bindtap="back" class="img1" src="/images/fanhui1.png"></image>
+    <span class="p1">我的关注</span>
+  </view>
+  <view class="list">
+    <li class="p2" >律师</li>
+    <li class="p2">文章</li>
+  </view>
+  
+  <view bindtap="toPj" class="box" wx:for="{{content}}" id="{{item.id}}" data-item="item" wx:for-index="i" wx:key="id">
+      <view>
+        <image bindtap="get" class="img2" src="{{item.imgsrc}}"></image>
+        <text class="name">{{item.name}}</text>
+        <text class="time">{{item.worktime}}</text>
+        <image class="img3" src="/images/weizhi.png"></image>
+        <text class="home">{{item.homeland}}</text>
+        <image class="img4" src="/images/fangzi.png"></image>
+        <text class="work">{{item.workspace}}</text>
+        <view class="list1">
+          <li>{{item.thing1}}</li>
+          <li>{{item.thing2}}</li>
+        </view>
+        <view class="list1" style="margin-top: 30rpx;margin-bottom: 30rpx;">
+          <li>{{item.thing3}}</li>
+          <li>{{item.thing4}}</li>
+        </view>
+        
+      </view>
+  </view>
+</view>
