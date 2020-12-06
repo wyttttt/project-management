@@ -1,0 +1,42 @@
+/* pages/question1/question1.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tittle{
+  width: 100%;
+  height: 100rpx;
+  background-color: #4481ff;
+  text-align: center;
+  border-bottom: 2rpx #cbcbcb solid;
+}
+.img1{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  right: 250rpx;
+  top: 20rpx;
+}
+.pp{
+  color: white;
+  position: relative;
+  top: 10rpx;
+  font-size: large;
+}
+.v1{
+  width: 100%;
+  /* height: 80rpx; */
+  border-top: 2rpx #cbcbcb solid;
+  border-bottom: 2rpx #cbcbcb solid;
+}
+.p1{
+  font-size: smaller;
+  color: #4481ff;
+  padding-left: 20rpx;
+}
+.p2{
+  font-size: smaller;
+  padding-left: 20rpx;
+}

@@ -1,0 +1,15 @@
+<!--pages/question1/question1.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img1" bindtap="toQuestion" src="/images/fanhui1.png"></image>
+    <text class="pp">常见问题</text>
+  </view>
+  <view class="v1">
+    <text class="p1">问题：\n</text>
+    <text class="p2">想咨询律师问题？</text>
+  </view>
+  <view style="margin-top:50rpx;" class="v1">
+    <text class="p1">回答：\n</text>
+    <text class="p2">您好，法律问题专业性强，客服并非法律专业人士，请使用电话咨询、图文咨询等直接与律师进行沟通;如果需要代写文书或者委托律师代理案件，可以在平台发起申请，平台会保证每—位用户的权益。如有其它问题，请联系客服及时处理∶客服电话:021—****618;客服微信:Fight*大***17;客服工作时间︰法定工作日:8:30-18:00,非工作时间回复顺延，注:客服不解答法律问题</text>
+  </view>
+</view>
