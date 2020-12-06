@@ -1,0 +1,11 @@
+<!--pages/shezhi/shezhi.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img1" bindtap="toIndex" src="/images/fanhui1.png"></image>
+    <text class="p1">设置</text>
+  </view>
+  <view bindtap="toPwd" class="v1">设置支付密码</view>
+  <view bindtap="toQuestion" class="v1">常见问题</view>
+  <view bindtap="toYj" class="v1">意见反馈</view>
+  <view bindtap="toWm" class="v1">关于我们</view>
+</view>
