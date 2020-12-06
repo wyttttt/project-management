@@ -1,0 +1,21 @@
+<!--pages/passwd/passwd.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img1" bindtap="toSz" src="/images/fanhui1.png"></image>
+    <text class="p1">设置支付密码</text>
+  </view>
+  <text class="t1">请 设 置 六 位 数 支 付 密 码</text>
+  <view>
+    <form bindsubmit="formSubmit">
+      <view class='content'>
+        <block wx:for="{{Length}}" wx:key="item">
+          <input class='iptbox' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
+        </block>
+      </view>
+      <input name="password" password="{{true}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" bindinput="Focus"></input>
+      <view>
+        <button bindtap="back" class="btn-area" formType="submit">Submit</button>
+      </view>
+    </form>
+  </view>
+</view>

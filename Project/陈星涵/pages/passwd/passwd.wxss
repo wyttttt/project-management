@@ -1,0 +1,55 @@
+/* pages/passwd/passwd.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tittle{
+  width: 100%;
+  height: 100rpx;
+  background-color: #4481ff;
+  text-align: center;
+  border-bottom: 2rpx #cbcbcb solid;
+}
+.img1{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  right: 250rpx;
+  top: 20rpx;
+}
+.p1{
+  color: white;
+  position: relative;
+  top: 10rpx;
+  font-size: large;
+}
+.t1{
+  margin-top: 100rpx;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200rpx;
+}
+.iptbox{
+  width: 80rpx;
+  height: 80rpx;
+  border:1rpx solid #ddd;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ipt{
+  width: 0;
+  height: 0;
+}
+.btn-area{
+  width: 80%;
+  background-color: orange;
+  color:white;
+}
