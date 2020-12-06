@@ -1,0 +1,38 @@
+/* pages/user/user.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tittle{
+  width: 100%;
+  height: 100rpx;
+  background-color: #4481ff;
+  text-align: center;
+  color: white;
+  font-size: large;
+}
+.p1{
+  position: relative;
+  top: 24rpx;
+}
+.inp{
+  margin-top: 50rpx;
+  border: 1rpx black solid;
+}
+.but1{
+  display: block;
+  background-color: #4481ff;
+  color: white;
+  font-size: smaller;
+  margin-top: 20rpx;
+}
+.but2{
+  display: block;
+  background-color: #4481ff;
+  color: white;
+  font-size: smaller;
+  position: relative;
+  top: 30rpx;
+}

@@ -1,0 +1,12 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="tittle">
+    <text class="p1">登录/注册</text>
+  </view>
+  <view>
+    <input class="inp" type="text" bindinput="contentInput" placeholder="请输入您的电话号码"/>
+    <input class="inp" type="pwd" name="passwd" placeholder="请输入验证码"/>
+    <button class="but1">获取动态验证码</button>
+    <button class="but2" bindtap="sure">确认</button>
+  </view>
+</view>
