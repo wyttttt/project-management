@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/zixun/zixun",
+    "pages/shoucang/shoucang",
+    "pages/weituo/weituo",
+    "pages/women/women",
+    "pages/yijian/yijian",
+    "pages/passwd/passwd",
+    "pages/one/one",
+    "pages/money/money",
+    "pages/question1/question1",
+    "pages/question/question",
+    "pages/shezhi/shezhi",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "法援宝",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
