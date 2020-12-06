@@ -1,0 +1,38 @@
+<!--pages/weituo/weituo.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img" bindtap="toIndex" src="/images/fanhui1.png"></image>
+    <text class="p1">我的委托</text>
+  </view>
+  <view class="box">
+    <view class="v1">
+      <image class="img1" src="/images/qbwt.png"></image>
+      <text class="t1">全部委托</text>
+    </view>
+    <view class="v1">
+      <image class="img1" src="/images/fukuan.png"></image>
+      <text class="t1">待付款</text>
+    </view>
+  </view>
+  <view class="box1">
+    <view class="v1">
+      <image class="img1" src="/images/jingbiao.png"></image>
+      <text class="t1">竞标完成</text>
+    </view>
+    <view class="v1">
+      <image class="img1" src="/images/jinxing.png"></image>
+      <text class="t1">正在进行</text>
+    </view>
+    <view class="v1">
+      <image class="img1" src="/images/guanbi.png"></image>
+      <text class="t1">已关闭</text>
+    </view>
+    <view class="v1">
+      <image class="img1" src="/images/wancheng.png"></image>
+      <text class="t1">已完成</text>
+    </view>
+  </view>
+  <view class="box2" bindtap="submit">
+    <text>发布委托</text>
+  </view>
+</view>

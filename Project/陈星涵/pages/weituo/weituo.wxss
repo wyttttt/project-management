@@ -1,0 +1,64 @@
+/* pages/weituo/weituo.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tittle{
+  width: 100%;
+  height: 100rpx;
+  background-color: #4481ff;
+  text-align: center;
+  border-bottom: 2rpx #cbcbcb solid;
+}
+.img{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  right: 250rpx;
+  top: 20rpx;
+}
+.p1{
+  color: white;
+  position: relative;
+  top: 10rpx;
+  font-size: large;
+}
+.box{
+  width: 100%;
+}
+.v1{
+  width: 100%;
+  height: 60rpx;
+  border: 1rpx #cbcbcb solid;
+}
+.img1{
+  width: 50rpx;
+  height: 50rpx;
+  padding-left: 40rpx;
+  padding-top: 10rpx;
+}
+.t1{
+  font-size: small;
+  position: relative;
+  bottom: 15rpx;
+  left: 15rpx;
+}
+.box1{
+  width: 100%;
+  margin-top: 50rpx;
+}
+.box2{
+  width: 100%;
+  height: 80rpx;
+  background-color: #4481ff;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+}
+.box2 text{
+  position: relative;
+  top: 25rpx;
+}
