@@ -1,0 +1,43 @@
+/* pages/yijian/yijian.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tittle{
+  width: 100%;
+  height: 100rpx;
+  background-color: #4481ff;
+  text-align: center;
+  border-bottom: 2rpx #cbcbcb solid;
+}
+.img1{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  right: 250rpx;
+  top: 20rpx;
+}
+.p1{
+  color: white;
+  position: relative;
+  top: 10rpx;
+  font-size: large;
+}
+.inp{
+  width: 100%;
+}
+.inp1{
+  width: 100%;
+  height: 60rpx;
+  border: 1rpx #cbcbcb solid;
+  margin-bottom: 60rpx;
+  padding-left: 30rpx;
+}
+.inp2{
+  width: 100%;
+  height: 160rpx;
+  border: 1rpx #cbcbcb solid;
+  padding-left: 30rpx;
+}

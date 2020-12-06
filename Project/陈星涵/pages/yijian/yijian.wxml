@@ -1,0 +1,11 @@
+<!--pages/yijian/yijian.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img1" bindtap="toSz" src="/images/fanhui1.png"></image>
+    <text class="p1">意见反馈</text>
+  </view>
+  <view class="inp">
+    <input class="inp1" type="number" placeholder="请填写联系电话">电话</input>
+    <textarea class="inp2" type="textarea" placeholder="感谢您使用我们的产品，如果在使用中遇到问题，或者有想对我们提出来的意见和建议，欢迎您在这里告诉我们，我们会努力改进我们的产品。"></textarea>
+  </view>
+</view>
