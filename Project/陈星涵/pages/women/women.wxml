@@ -1,0 +1,28 @@
+<!--pages/women/women.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img1" bindtap="toSz" src="/images/fanhui1.png"></image>
+    <text class="p1">关于我们</text>
+  </view>
+  <view class="v1">
+    <image class="img" src="/images/falv.png"></image>
+    <text class="t1">法援宝</text>
+    <text class="t2">FA YUAN BAO</text>
+  </view>
+  <view>
+    <view class="v2">
+      <text>领先的互联网法律服务电商平台\n</text>
+      <text class="t3">联系我们</text>
+    </view>
+    <view class="v3">
+      <text>官方网址：http://www.fayuanbao.com\n</text>
+      <text>官方邮箱：fyb1456@baidu.com\n</text>
+      <text>合作电话：001-45673478</text>
+    </view>
+  </view>
+  <view class="v4">
+    <text class="t4">用户协议\n</text>
+    <text class="t5">版权所有Copyright@2018 进阶的小腿 版权所有\n</text>
+    <text class="t5">Copyright  冀ICP备  123456号</text>
+  </view>
+</view>
