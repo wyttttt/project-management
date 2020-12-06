@@ -1,0 +1,10 @@
+<!--pages/one/one.wxml-->
+<view class="container">
+  <view class="tittle">
+    <image class="img1" bindtap="toIndex" src="/images/fanhui1.png"></image>
+    <text class="p1">我的信息</text>
+  </view>
+  <image class="img" src="/images/wo.png"></image>
+  <view class="v1">用户名</view>
+  <view class="v1">密码</view>
+</view>
