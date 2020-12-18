@@ -1,0 +1,29 @@
+.doc{
+    display: flex;
+}
+.doc .content{
+    flex: 1;
+    padding-left: 150px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.doc ol{
+    margin-left:20px; 
+    width: 200px;
+}
+.leftpage{
+    width: 120px; 
+    height: 1515px;
+    background-color:#3E60C1;
+    margin-top:80px;
+}
+.leftpage li{
+    display: block;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.nlink{
+    color: white;
+}
+
+ 
