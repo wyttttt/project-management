@@ -64,6 +64,27 @@ Page({
 
   },
 
+  onLoad: function (options) {
+    wx.request({
+      url: 'https://www.responsibility.pro:2347/users' ,
+      method:'get',
+      data: {},
+      header:{'content-type':'application/json'},
+      success: function (res) {
+        console.log(res.data[0].likes);
+        wx.setStorageSync('nosaylikes', res.data[0].likes)
+          // that.setData({
+          //    desc:res.data
+          // })
+      },
+      fail:function(err){
+        console.log(err)
+      }
+  })
+  },
+
+
+
   data: {
     array: ['选择案件类型', '一般民事', '合同纠纷', '债权债务', '交通事故', '婚姻家庭', '工商税务', '其他'],
     index: 0,
@@ -75,27 +96,52 @@ Page({
     this.setData({
       index: e.detail.value
     })
-    wx.setStorage({
-      key: 'type',
-      data: this.data.array[e.detail.value],
-     
-    })
+    wx.setStorageSync('type', this.data.array[e.detail.value])
+  },
+
+  setdesc:function(res){
+    wx.setStorageSync('text', res.detail.value)
   },
 
   
   toSubmit:function(res){
+
     var that = this;
-    //同步打印
-    try{
-      // console.log(wx.getStorageSync('setdesc'));
-    }catch(e){
-      console.log(e.message)
-    }
+  //同步打印
+  try{
+    // console.log(wx.getStorageSync('setdesc'));
+  }catch(e){
+    console.log(e.message)
+  }
+  
+  var type = wx.getStorageSync('type');
+  var text = wx.getStorageSync('text');
+  // var mess = type + '-' + text;
+  // console.log(mess)
+  // console.log(type+'--'+text)
+  
+
     
-    var type = wx.getStorageSync('type');
-    var text = wx.getStorageSync('text');
-    // var mess = type + '-' + text;
-    // console.log(mess)
+if(wx.getStorageSync('nosaylikes') == 0){
+  wx.showToast({
+    title: '您已被禁言',
+    icon: 'none',
+    duration:1000
+  })
+  setTimeout(function(){
+    wx.navigateBack({
+      delta:1
+    })
+  },1000)
+}else{ 
+  if((type == '') || (text == '')){
+    wx.showToast({
+      title: '请输入正确值',
+      icon: 'none',
+      duration:1000
+    })
+  }else{
+  
     
     wx.request({
       url: 'https://www.responsibility.pro:2347/addconsult/' + encodeURI(type) + '/' + encodeURI(text),
@@ -112,46 +158,40 @@ Page({
         console.log(err)
       }
   })
-
-  if((type == '') || (text == '')){
-    wx.showToast({
-      title: '请输入正确值',
-      icon: 'none',
-      duration:1000
-    })
-  }else{
+  
+  
+  
     wx.showToast({
       title: '提交成功',
       icon: 'success',
       duration:1000
     })
-
+  
     setTimeout(function(){
       wx.navigateBack({
         delta:1
       })
     },1000)
-    wx.removeStorageSync('type')
-    wx.removeStorageSync('text')
-  }
-    
+  
+   
+  }//else
+
+}//nosay else
+
+
+
+   
 
     
 
-  },
 
-  setdesc:function(res){
-    wx.setStorage({
-      key:'text',
-      data:res.detail.value
-  })
-  },
+  },//submit
+
+  
 
 
 
 
+})//pages
 
 
-
-
-})

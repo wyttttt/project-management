@@ -13,7 +13,7 @@
 
 
   <block wx:for="{{searchlawyer}}" wx:key="yyy" data-item="item" wx:for-index="index">
-    <view class="threePart" bindtap="toTip">
+    <view class="threePart" bindtap="toLsxq" id="{{item.id}}">
 
       <image class="secondPartImg" src="{{item.imgsrc}}"></image>
       <p class="secondPartP1">{{item.name}}</p>

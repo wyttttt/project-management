@@ -1,12 +1,20 @@
 <!--pages/find/find.wxml-->
-<view class="faxian">发现</view>
-  <button bindtap="goTolsq">
-  <image src='/icon/lvshiquan.png'></image>
-  律师圈</button>
-<button bindtap="goTophb">
-  <image src='/icon/paihangbang.png'></image>
-  排行榜</button>
-<button bindtap="goTohzj">
-  <image src='/icon/huzhujin.png'></image>
-  互助金</button>
- 
+<view class="container">
+  <view class="faxian">发现</view>
+
+  <view class="buttn" bindtap="goTolsq">
+    <image src='/icon/lvshiquan.png' class="buttImg"></image>
+    <p class="buttP">律师圈</p>
+  </view>
+
+  <view class="butt" bindtap="goTophb">
+    <image src='/icon/paihangbang.png' class="buttImg"></image>
+    <p class="buttP">排行榜</p>
+  </view>
+
+  <view class="butt" bindtap="goTohzj">
+    <image src='/icon/huzhujin.png' class="buttImg"></image>
+    <p class="buttP">互助金</p>
+  </view>
+  
+</view>

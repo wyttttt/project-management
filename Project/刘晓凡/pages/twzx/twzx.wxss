@@ -1,0 +1,87 @@
+/* pages/mfzx/mfzx.wxss */
+.container{
+  background-color: rgb(250, 250, 250);
+}
+.firstPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  margin-top: -110px;
+}
+.firstPartP{
+  width: 100%;
+  float: left;
+  margin: 3.8%;
+  color: #8f8f91;
+}
+
+.secondPart{
+  width: 100%;
+  height: 290px;
+  background-color: white;
+  margin-top: 15px;
+
+}
+.secondPartP1{
+  float: left;
+  width: 80%;
+  margin: 2.4%;
+}
+.secondPartText{
+  float: left;
+  width: 85%;
+  height: 130px;
+  /* background-color: rgb(233, 233, 233); */
+  margin-top: 1%;
+  margin-left: 8%;
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+}
+.secondPartP2{
+  float: left;
+  width: 170rpx;
+  height: 170rpx;
+  background-color: #ededed;
+  margin: 2.4%;
+}
+.selectImage{
+  float: left;
+  width: 170rpx;
+  height: 170rpx;
+  /* background-color: #1060ff; */
+  margin-top: 2.4%;
+}
+
+.secondPartP2Img{
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  margin: 35%;
+
+}
+
+
+.threePart{
+  width: 100%;
+  height: 210px;
+  background-color: white;
+  margin-top: 15px;
+
+}
+
+.fourPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: #1060ff;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  line-height: 100rpx;
+}
+.fourPartP{
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+}
+
+

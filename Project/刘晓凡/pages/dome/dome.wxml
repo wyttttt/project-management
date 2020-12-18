@@ -1,0 +1,67 @@
+<view class="container">
+
+  <view class="phb">
+    排行榜
+  </view>
+
+  <view class='topTabSwiper'>
+
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>好评榜</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>解答榜</view>
+
+  </view>
+
+
+
+  <swiper current="{{currentData}}" class='swiper' style="height:{{height}};"  duration="300" bindchange="bindchange">
+
+    <swiper-item>
+      <!-- <view class='swiper_con'>welcome come to 推荐</view> -->
+
+      <block wx:for="{{content}}" data-item="item" wx:for-index="i" wx:key="id">
+        <view class="secondPart" id="{{item.id}}" bindtap="toLsxq">
+          <view class="secondPartV1">
+            <image class="secondPartImg" src="{{item.imgsrc}}"></image>
+          </view>
+
+          <p class="secondPartP1">{{item.name}}</p>
+          <p class="secondPartPn1">{{item.worktime}}</p>
+          <p class="secondPartP2">
+            <image class="secondPartP2Img" src="/icon/paihangbang.png"></image>{{item.homeland}}
+          </p>
+
+          <p class="secondPartP4">{{item.thing1}}</p>
+
+          <p class="secondPartP5">服务次数：{{item.answerrate}} | 综合评价：{{item.praiserate}}</p>
+
+        </view>
+      </block>
+
+    </swiper-item>
+
+    <swiper-item>
+      <!-- <view class='swiper_con'>welcome come to 热点</view> -->
+      <block wx:for="{{acontent}}" data-item="item" wx:for-index="i" wx:key="id">
+        <view class="secondPart" id="{{item.id}}" bindtap="toLsxq">
+          <view class="secondPartV1">
+            <image class="secondPartImg" src="{{item.imgsrc}}"></image>
+          </view>
+
+          <p class="secondPartP1">{{item.name}}</p>
+          <p class="secondPartPn1">{{item.worktime}}</p>
+          <p class="secondPartP2">
+            <image class="secondPartP2Img" src="/icon/paihangbang.png"></image>{{item.homeland}}
+          </p>
+
+          <p class="secondPartP4">{{item.thing1}}</p>
+
+          <p class="secondPartP5">服务次数：{{item.answerrate}} | 综合评价：{{item.praiserate}}</p>
+
+        </view>
+      </block>
+
+    </swiper-item>
+
+  </swiper>
+
+</view>

@@ -10,13 +10,14 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  // bindViewTap: function() {
+  //   wx.navigateTo({
+  //     url: '../logs/logs'
+  //   })
+  // },
   onLoad: function () {
     if (app.globalData.userInfo) {
+      console.log(app.globalData)
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
@@ -34,7 +35,9 @@ Page({
       // 在没有 open-type=getUserInfo 版本的兼容处理
       wx.getUserInfo({
         success: res => {
+         
           app.globalData.userInfo = res.userInfo
+          
           this.setData({
             userInfo: res.userInfo,
             hasUserInfo: true
@@ -50,5 +53,38 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+
+  toguanzhu: function(){
+    wx.navigateTo({
+      url: '../guanzhu/guanzhu',
+    })
+  },
+  toUser: function(){
+    wx.navigateTo({
+      url: '../user/user',
+    })
+  },
+  toSz: function(){
+    wx.navigateTo({
+      url: '../shezhi/shezhi',
+    })
+  },
+  toMoney: function(){
+    wx.navigateTo({
+      url: '../money/money',
+    })
+  },
+  toOne: function(){
+    wx.navigateTo({
+      url: '../one/one',
+    })
+  },
+  toZixun: function(){
+    wx.navigateTo({
+      url: '../zixun/zixun',
+    })
+  },
+
 })

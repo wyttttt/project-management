@@ -1,6 +1,9 @@
 /* pages/personal/personal.wxss */
-/**index.wxss**/
+.container{
+  background-color: rgb(250, 250, 250);
+}
 .userinfo {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,11 +15,107 @@
   margin: 20rpx;
   border-radius: 50%;
 }
+/**index.wxss**/
 
-.userinfo-nickname {
-  color: #aaa;
+.container{
+  background-color: rgb(250, 250, 250);
 }
 
-.usermotto {
-  margin-top: 200px;
+.index{
+  width: 100%;
+  height: 100rpx;
+  background-color: #1060ff;
+  margin-top: -110px;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
 }
+.user{
+  float: left;
+  /* background-color: #4f86f3; */
+  background: #3f7fff;
+  width: 100%;
+  height: 250rpx;
+  border-bottom: 0.5px #ddd solid;
+  margin-top: -15%;
+}
+
+.img2{
+  float: left;
+  width: 143rpx;
+  height: 143rpx;
+  margin-left: 4%;
+  margin-top: 12%;
+  border-radius: 50%;
+}
+.but{
+  float: left;
+  font-size: 17.5px;
+  color: white;
+  margin-top: 19%;
+  margin-left: 5%;
+ 
+}
+
+.info{
+  float: left;
+  width: 100%;
+  height: 100rpx;
+  border: 0.5px #ddd solid;
+  margin-top: 5%;
+  background-color: white;
+  text-align: center;
+ 
+}
+
+.info1{
+  float: left;
+  width: 50%;
+  height: 100%;
+  /* background-color: violet; */
+}
+.info11{
+  float: left;
+  width: 100%;
+  margin-top: 3.5%;
+}
+.info12{
+  float: left;
+  width: 100%;
+  font-size: 13.5px;
+  color: #696868;
+}
+.info2{
+  position: absolute;
+  right: 200rpx;
+}
+
+.v1{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 25rpx;
+  border: 0.5px #ddd solid;
+  background-color: white;
+}
+.img4{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 16rpx;
+  margin-left: 50rpx;
+}
+.t1{
+  font-size: smaller;
+  position: relative;
+  left: 50rpx;
+  bottom: 14rpx;
+}
+.buttom{
+  width: 100%;
+  margin-top: 180rpx;
+  border-top: 3rpx #cbcbcb solid;
+}
+
+
+

@@ -1,0 +1,60 @@
+/* pages/qwyaxq/qwyaxq.wxss */
+.container{
+  background-color: rgb(250, 250, 250);
+}
+.firstPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: #1060ff;
+  margin-top: -110px;
+ 
+}
+
+.firstPartOne{
+ float: left;
+ width: 100%;
+ text-align: center;
+ height: 100rpx;
+ line-height: 100rpx;
+ color: white;
+
+  /* background-color: saddlebrown; */
+
+}
+.firstPartOneP1{
+  padding-bottom: 26rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  /* border-bottom: 3px solid white; */
+}
+.secondPart{
+  float: left;
+  width: 100%;
+  height: 400rpx;
+  background-color: white;
+
+}
+.vie{
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.threePart{
+  float: left;
+  width: 94%;
+  margin: 3%;
+  background-color: white;
+}
+.threePartP1{
+  float: left;
+  width: 100%;
+  font-size: 21px;
+  font-weight: bold;
+}
+.threePartP2{
+  float: left;
+  width: 100%;
+  margin-top: 5%;
+}
+

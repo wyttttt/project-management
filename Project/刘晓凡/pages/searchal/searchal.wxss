@@ -1,0 +1,63 @@
+/* pages/searchal/searchal.wxss */
+.container{
+  background-color: rgb(250, 250, 250);
+}
+.firstPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: #1060ff;
+  margin-top: -110px;
+ 
+}
+
+.firstPartOne{
+ float: left;
+ width: 100%;
+ text-align: center;
+ height: 100rpx;
+ line-height: 100rpx;
+ color: white;
+
+  /* background-color: saddlebrown; */
+
+}
+.firstPartOneP1{
+  padding-bottom: 26rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  /* border-bottom: 3px solid white; */
+}
+.threePart{
+  width: 100%;
+  /* height: 200rpx; */
+  background-color: white;
+  margin-top: 3%;
+}
+.threePartP1{
+  float: left;
+  width: 94%;
+  margin: 3%;
+  font-weight: bold;
+
+}
+.threePartP2{
+  float: left;
+  width: 94%;
+  margin-left: 3%;
+  color: #616161;
+  font-size: 15px;
+}
+.threePartTwo{
+  float: left;
+  width: 94%;
+  margin: 3%;
+  /* background-color: teal; */
+  font-size: 14px;
+  color: rgb(99, 99, 99);
+}
+.threePartP3{
+  float: left;
+}
+.threePartP4{
+  float: right;
+}

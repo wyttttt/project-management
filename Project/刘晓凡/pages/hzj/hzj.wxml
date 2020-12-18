@@ -1,7 +1,13 @@
 <!--pages/hzj/hzj.wxml-->
 
-<view class="hzj">
-    <!-- <button>
-        <image src="/icon/fanhui.png"></image>
-    </button> -->
-    互助金</view>
+<view class="container">
+    <view class="hzj">
+        互助金
+    </view>
+
+    <view class="jt">
+        <image class="jtImg" src="../../icon/hzj.png"></image>
+    </view>
+
+
+</view>

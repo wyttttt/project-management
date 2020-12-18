@@ -32,9 +32,10 @@
   margin: 3%;
   font-weight: bold;
 }
-.threePart{
+/* .threePart{
   width: 96%;
   height: 200rpx;
   background-color: white;
-}
+} */
+
 

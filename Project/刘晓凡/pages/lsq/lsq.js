@@ -48,7 +48,7 @@ Page({
   onShow: function () {
     
     wx.removeStorageSync('content2')
-   
+      this.onLoad()
       console.log('已刷新')
       this.onLoad()
   },

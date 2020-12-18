@@ -7,9 +7,22 @@
       <image class="iph" src="../../icon/index/iphone.png"></image>
     </view>
 
-    <view class="search" bindtap="toSearch">
+    <view class="search">
       <view class="searchV">
-        <p class="searchP">在这里搜索</p>
+        <!-- <p class="searchP">在这里搜索</p> -->
+        <!-- 滚动条 -->
+        <view class="marquee_container " style="font-size:28rpx;">
+          <view class='marquee_text'
+            style='--marqueeWidth--:{{-broadcast_arr.width_mal}}px;--speed--:{{broadcast_arr.time}}s;width:{{broadcast_arr.width_mal}}px;'>
+            <block wx:for="{{roll}}" wx:key="index">
+              <view style='color:white;margin-left:{{index!=0?item.starspos*2:0}}rpx;' class="">
+                {{item.text}}
+              </view>
+            </block>
+          </view>
+        </view>
+        <!-- 滚动条 -->
+
       </view>
     </view>
 
@@ -33,39 +46,39 @@
       </p>
     </view>
 
-    <view class="secondPartOne" bindtap="toTip">
+    <view class="secondPartOne" bindtap="toZls">
       <view class="secondPartTwoIcon">
         <image class="secondPartTwoIconImg" src="../../icon/index/secondPartTwoIcon.png"></image>
       </view>
       <p class="secondPartOneP1">
-        案件委托
+        律师查找
       </p>
       <p class="secondPartOneP2">
         委托律师代理
       </p>
     </view>
 
-    <view class="secondPartOne" bindtap="toTip">
+    <view class="secondPartOne" bindtap="toAlcx">
       <view class="secondPartThreeIcon">
         <image class="secondPartThreeIconImg" src="../../icon/index/secondPartThreeIcon.png"></image>
       </view>
       <p class="secondPartOneP1">
-        法律互助
+        案例查询
       </p>
       <p class="secondPartOneP2">
-        互助资金援助
+        查询案例法规
       </p>
     </view>
 
-    <view class="secondPartOne" bindtap="toZcgs">
+    <view class="secondPartOne" bindtap="toFyjs">
       <view class="secondPartFourIcon">
         <image class="secondPartFourIconImg" src="../../icon/index/secondPartFourIcon.png"></image>
       </view>
       <p class="secondPartOneP1">
-        众筹官司
+        费用计算
       </p>
       <p class="secondPartFourP2">
-        众筹援助
+        计算业务费用
       </p>
     </view>
 
@@ -75,10 +88,10 @@
 
   <view class="threePart">
 
-    <view class="threePartOne" bindtap="toZls">
+    <view class="threePartOne" bindtap="toSsbq">
       <image class="threePartOneImg" src="../../icon/index/threePartOneImg.png"></image>
       <p class="threePartOneP">
-        找律师
+        诉讼保全
       </p>
     </view>
 
@@ -89,17 +102,17 @@
       </p>
     </view>
 
-    <view class="threePartOne" bindtap="toAlcx">
+    <view class="threePartOne" bindtap="toQwya">
       <image class="threePartOneImg" src="../../icon/index/threePartThreeImg.png"></image>
       <p class="threePartTwoP">
-        案例查询
+        普法栏目
       </p>
     </view>
 
-    <view class="threePartOne" bindtap="toFyjs">
+    <view class="threePartOne" bindtap="toZcgs">
       <image class="threePartOneImg" src="../../icon/index/threePartFourImg.png"></image>
       <p class="threePartTwoP">
-        费用计算
+        众筹援助
       </p>
     </view>
 
@@ -115,7 +128,7 @@
 
   </view>
 
-  <view class="fivePart" bindtap="toTip">
+  <view class="fivePart" bindtap="toQwya">
     <image class="fivePartImg" src="../../icon/index/fivePartImg.png"></image>
     <p class="fivePartP">法律知识援助讲座</p>
   </view>
@@ -145,21 +158,26 @@
 
   </view> -->
 
-  <block wx:for="{{users}}" wx:key="yyy" data-item="item" wx:for-index="index" >
-    <view class="sevenPart" id="{{item.id}}"  bindtap="toZxxq">
-      <image class="sevenPartImg"
-        src="{{item.imgsrc}}"></image>
+  <block wx:for="{{users}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="sevenPart" id="{{item.id}}" 
+    data-consult_id="{{item.consult_id}}" bindtap="toZxxq">
+      <image class="sevenPartImg" src="{{item.imgsrc}}"></image>
       <p class="sevenPartP1">{{item.name}}</p>
       <p class="sevenPartP2">{{item.date}}</p>
       <view class="sevenPartTwo">
+
         <p class="sevenPartTwoP">{{item.text}}</p>
+       
+
+        <image class="sevenPartTwoImg" mode="widthFix" src="{{item.img}}"></image>
+    
 
       </view>
       <view class="sevenPartThree">
         <p class="sevenPartThreeP">{{item.type}}</p>
         <p class="sevenPartThreeP2">
           <image class="sevenPartThreeP2Img" src="../../icon/index/sevenPartThreeP2Img.png"></image>
-          {{item.number}}人回答
+          查看回答
         </p>
 
       </view>
@@ -168,3 +186,14 @@
   </block>
 
 </view>
+
+
+<!-- It's not enough to just say it verbally -->
+
+
+
+
+
+
+
+

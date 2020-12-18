@@ -29,6 +29,7 @@ Page({
     wx.removeStorageSync('data')
     wx.removeStorageSync('likes')
     wx.removeStorageSync('setLawyerId')
+    wx.removeStorageSync('setlawyer')
  
   },
 

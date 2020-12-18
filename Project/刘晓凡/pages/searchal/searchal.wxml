@@ -1,0 +1,24 @@
+<!--pages/alcx/alcx.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <view class="firstPartOne">
+      <p class="firstPartOneP1">法规案例</p>
+    </view>
+
+
+  </view>
+
+
+  <block wx:for="{{case}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="threePart">
+      <p class="threePartP1">{{item.title}}</p>
+      <p class="threePartP2">{{item.content}}</p>
+      <view class="threePartTwo">
+        <p class="threePartP3">{{item.court}}</p>
+        <p class="threePartP4">{{item.date}}</p>
+      </view>
+    </view>
+  </block>
+
+</view>

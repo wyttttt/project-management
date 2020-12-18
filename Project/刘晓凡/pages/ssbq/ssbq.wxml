@@ -1,0 +1,14 @@
+<!--pages/ssbq/ssbq.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <view class="firstPartOne">
+
+      <p class="firstPartOneP">诉讼保全</p>
+    </view>
+   
+  </view>
+  <view class="secondPart">
+    <image class="secondPartImg" src="../../icon/index/ssbq.png"></image>
+  </view>
+</view>

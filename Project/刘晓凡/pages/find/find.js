@@ -8,25 +8,40 @@ Page({
    */
  
   //事件处理函数
+
+  onShow:function(){
+    wx.removeStorageSync('height')
+    this.onLoad()
+    wx.removeStorageSync('data')
+    wx.removeStorageSync('likes')
+    wx.removeStorageSync('setLawyerId')
+    this.onLoad()
+  },
   
   onLoad:function () {
+    var that = this;
+    wx.request({
+      //请求链接
+      url: 'https://www.responsibility.pro:2347/lawyer',
+      //发送的数据
+      data: { 
+      },
+      header:{
+        'content-type':'application/json'
+      },
+      //成功回调
+      success: function (res) {
+        console.log(res.data.length);
+        wx.setStorageSync('height', res.data.length*180)
+      },
+      fail:function(err){
+        console.log(err)
+      }
+  })
    
 
   },
-  submitData:function(f){
-    wx.navigateTo({
-      url:'/pages/submit/submit'
-    })
-  },
-  writeTitle:function(f){
-    let fval=f.detail.value;
-    wx.setStorageSync('content1',encodeURIComponent(fval));
-   
-  },
-  writeText:function(f){
-    let fval=f.detail.value;
-    wx.setStorageSync('content2',encodeURIComponent(fval));
-  },
+ 
   goTolsq:function(f){
     wx.navigateTo({
       url: '/pages/lsq/lsq',

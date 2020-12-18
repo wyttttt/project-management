@@ -14,3 +14,62 @@
   margin: 3.8%;
   color: #747475;
 }
+.secondPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  margin-top: 3%;
+  
+}
+.threePart{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  margin-top: 3%;
+  line-height: 100rpx;
+  
+}
+.threePartP1{
+  float: left;
+  margin-left: 3.8%;
+}
+.threePartP2{
+  float: right;
+  margin-right: 7.5%;
+}
+
+.fourPart{
+  float: left;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 110rpx;
+  background-color: #1060ff;
+  text-align: center;
+  line-height: 110rpx;
+}
+.fourPartP{
+  color: white;
+  font-size: 17px;
+}
+.fivePart{
+  float: left;
+  width: 94%;
+  height: 100px;
+  /* background-color: #93b7ff; */
+  margin: 3%;
+}
+.fivePartP1{
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  /* background-color: #747475; */
+}
+.fivePartP2{
+  float: left;
+  width: 100%;
+ font-size: 14px;
+ color: #747475;
+ margin-top: 1%;
+  /* background-color: #747475; */
+}

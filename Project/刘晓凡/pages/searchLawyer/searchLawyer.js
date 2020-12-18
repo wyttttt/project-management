@@ -26,6 +26,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    wx.removeStorageSync('setLawyerId')
+    wx.removeStorageSync('setlawyer')
 
   },
 
@@ -85,21 +87,42 @@ Page({
     
     var id = wx.getStorageSync('setlawyer');
     console.log(encodeURI(id));
-    wx.request({
-      url: 'https://www.responsibility.pro:2347/selectsomeone/' + encodeURI(id),
-      method:'get',
-      data: {},
-      header:{'content-type':'application/json'},
-      success: function (res) {
-        console.log(res.data);
-          that.setData({
-             searchlawyer:res.data
-          })
-      },
-      fail:function(err){
-        console.log(err)
-      }
+    if(id == ''){
+      wx.showToast({
+        title: '请输入正确名称',
+        icon: 'none',
+        duration:1000
+      })
+    }else{
+      wx.request({
+        url: 'https://www.responsibility.pro:2347/selectsomeone/' + encodeURI(id),
+        method:'get',
+        data: {},
+        header:{'content-type':'application/json'},
+        success: function (res) {
+          console.log(res.data);
+            that.setData({
+               searchlawyer:res.data
+            })
+        },
+        fail:function(err){
+          console.log(err)
+        }
+    })
+    }
+    
+},
+
+toLsxq:function(e){
+
+  console.log(e)
+  
+  wx.navigateTo({
+    url: '../lsxq/lsxq',
   })
+  wx.setStorageSync( 'setLawyerId', e.currentTarget.id)
+  
+
 },
 
 

@@ -1,34 +1,67 @@
-<!--pages/phb/phb.wxml-->
-<!--pages/phb/phb.wxml-->
+<view class="container">
+
 <view class="phb">
-    <!-- <button>
-        <image src="/icon/fanhui.png"></image>
-    </button> -->
-    排行榜</view>
-<view class="top">
-    <button bindtap="goTophb" style="width:50%;height:10vw">
-    好评榜
-    </button>
-    <button bindtap="goTojdb" style="width:50%w;height:10vw">
-    解答榜
-    </button>
+  排行榜
 </view>
-<view class='div' wx:for="{{content}}" data-item="item" wx:for-index="i" wx:key="id">
-    <view>
-        <image bindtap="get" class="userinfo-avatar" src="{{item.hpage}}" ></image>
-        <view class="inf">
-            <text style="font-size:20px">{{item.hname}}\n</text>
-            <text style="color:orange;">{{item.hyear}}\n</text>
-            <text style="color:blue;">
-                <!-- <image src="/icon/weizhi.png"></image> -->
-                {{item.haddress}}
-            </text>
-            <text style="font-size:12px;color:grey;border:0.5px grey solid;border-radius:2px;">{{item.htype}}\n</text>
-            <text style="color:grey;">服务次数:{{item.hfrequency}}  |  </text>
-            <text style="color:grey;">综合评价:{{item.hprise}}</text>
+
+<view class='topTabSwiper'>
+
+  <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>好评榜</view>
+  <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>解答榜</view>
+
+</view>
+
+
+
+<swiper current="{{currentData}}" class='swiper' style="height:{{height}};"  duration="300" bindchange="bindchange">
+
+  <swiper-item>
+    <!-- <view class='swiper_con'>welcome come to 推荐</view> -->
+
+    <block wx:for="{{content}}" data-item="item" wx:for-index="i" wx:key="id">
+      <view class="secondPart" id="{{item.id}}" bindtap="toLsxq">
+        <view class="secondPartV1">
+          <image class="secondPartImg" src="{{item.imgsrc}}"></image>
         </view>
-    </view>
+
+        <p class="secondPartP1">{{item.name}}</p>
+        <p class="secondPartPn1">{{item.worktime}}</p>
+        <p class="secondPartP2">
+          <image class="secondPartP2Img" src="/icon/paihangbang.png"></image>{{item.homeland}}
+        </p>
+
+        <p class="secondPartP4">{{item.thing1}}</p>
+
+        <p class="secondPartP5">服务次数：{{item.answerrate}} | 综合评价：{{item.praiserate}}</p>
+
+      </view>
+    </block>
+
+  </swiper-item>
+
+  <swiper-item>
+    <!-- <view class='swiper_con'>welcome come to 热点</view> -->
+    <block wx:for="{{acontent}}" data-item="item" wx:for-index="i" wx:key="id">
+      <view class="secondPart" id="{{item.id}}" bindtap="toLsxq">
+        <view class="secondPartV1">
+          <image class="secondPartImg" src="{{item.imgsrc}}"></image>
+        </view>
+
+        <p class="secondPartP1">{{item.name}}</p>
+        <p class="secondPartPn1">{{item.worktime}}</p>
+        <p class="secondPartP2">
+          <image class="secondPartP2Img" src="/icon/paihangbang.png"></image>{{item.homeland}}
+        </p>
+
+        <p class="secondPartP4">{{item.thing1}}</p>
+
+        <p class="secondPartP5">服务次数：{{item.answerrate}} | 综合评价：{{item.praiserate}}</p>
+
+      </view>
+    </block>
+
+  </swiper-item>
+
+</swiper>
+
 </view>
-
-
-

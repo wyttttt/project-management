@@ -12,7 +12,7 @@
 
 .firstPartOne{
  float: left;
- width: 50%;
+ width: 100%;
  text-align: center;
  height: 100rpx;
  line-height: 100rpx;
@@ -25,7 +25,7 @@
   padding-bottom: 26rpx;
   padding-left: 10rpx;
   padding-right: 10rpx;
-  border-bottom: 3px solid white;
+  /* border-bottom: 3px solid white; */
 }
 
 .secondPart{

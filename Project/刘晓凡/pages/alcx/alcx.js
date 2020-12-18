@@ -63,6 +63,32 @@ Page({
   onShareAppMessage: function () {
 
   },
+  onLoad:function(e){
+    var that = this;
+    var name = wx.getStorageSync('name');
+    wx.request({
+        //请求链接
+        url: 'https://www.responsibility.pro:2347/thing',
+        //发送的数据
+        data: { 
+        },
+        header:{
+          'content-type':'application/json'
+        },
+        //成功回调
+        success: function (res) {
+          console.log(res.data);
+          
+            that.setData({
+                case:res.data
+            })
+        },
+       
+        fail:function(err){
+          console.log(err)
+        }
+    })
+  },
 
   setcase:function(res){
     wx.setStorage({
@@ -72,31 +98,10 @@ Page({
   },
 
   getcase:function(){
-    var that = this;
-    //同步打印
-    try{
-      console.log(wx.getStorageSync('setcase'));
-    }catch(e){
-      console.log(e.message)
-    }
-    
-    var id = wx.getStorageSync('setcase');
-    console.log(encodeURI(id));
-    wx.request({
-      url: 'https://www.responsibility.pro:2347/thing/' + encodeURI(id),
-      method:'get',
-      data: {},
-      header:{'content-type':'application/json'},
-      success: function (res) {
-        console.log(res.data);
-          that.setData({
-             case:res.data
-          })
-      },
-      fail:function(err){
-        console.log(err)
-      }
-  })
+    wx.navigateTo({
+      url: '../searchal/searchal',
+    })
+  
 },
 
   

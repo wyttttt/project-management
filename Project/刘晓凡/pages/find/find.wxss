@@ -1,19 +1,56 @@
 /* pages/find/find.wxss */
-button{
-  width:350px;
+.container{
+  background-color: rgb(250, 250, 250);
+}
+.buttn{
+  float: left;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 0.5px solid #ddd;
+  line-height: 50px;
+  margin-top: -11%;
+
+}
+.butt{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 0.5px solid #ddd;
+  line-height: 50px;
+  margin-top: 2%;
+
+}
+.buttImg{
+  float: left;
+  height:40px;
+  width:40px;
+  margin-top: 1.5%;
+  margin-left: 2%;
+}
+.buttP{
+  float: left;
+  margin-left: 2%;
+}
+/* button{
+  width:100%;
   color:lightblue;
   background-color: #fff;
   border:0.5px grey solid;
   margin-top: 10px;
-}
-button image{
+} */
+/* button image{
   height:30px;
   width:30px;
-}
+} */
 .faxian{
   width: 100%;
-  height:100px;
+  height: 100rpx;
+  background-color: #1060ff;
+  margin-top: -110px;
+  position: fixed;
+  z-index: 100;
   text-align: center;
-  background-color: rgb(6, 100, 224);
-  color:white;
+  line-height: 100rpx;
+  color: white;
 }

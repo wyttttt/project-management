@@ -1,0 +1,47 @@
+<!--pages/qwyaxq/qwyaxq.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <view class="firstPartOne">
+      <p class="firstPartOneP1">普法栏目</p>
+    </view>
+
+  </view>
+
+  <!-- <view class="secondPart">
+    <video class="vie" controls autoplay
+      src="https://f.video.weibocdn.com/jarKaRoelx07EtbrHAvu01041200eY9U0E010.mp4?label=mp4_ld&template=640x360.25.0&trans_finger=40a32e8439c5409a63ccf853562a60ef&ori=0&ps=1BVp4ysnknHVZu&Expires=1608000652&ssig=FIWja7ZiLW&KID=unistore,video">
+    </video>
+  </view>
+
+  <view class="threePart">
+    <p class="threePartP1">这是标题这是标题这这是标题这是标题这这是标题这是标题这是标题这是标题</p>
+    <text
+      class="threePartP2">这是内容\n这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容</text>
+  </view> -->
+
+
+
+  <block wx:for="{{video}}" wx:key="yyy" data-item="item" wx:for-index="index">
+    <view class="secondPart">
+      <video class="vie" controls autoplay
+        src="{{item.video}}"
+        >
+      </video>
+    </view>
+
+    <view class="threePart">
+      <p class="threePartP1">{{item.title}}</p>
+      <text
+        class="threePartP2">{{item.content}}</text>
+    </view>
+
+  </block>
+
+
+
+</view>
+
+
+
+<!-- src="https://f.us.sinaimg.cn/003TEiiGlx07uqDbkUeQ01041200EQP80E010.mp4?label=mp4_ld&template=640x360.28.0&ori=0&ps=1BVp4ysnknHVZu&Expires=1608003883&ssig=dY1ySaK86i&KID=unistore,video" -->

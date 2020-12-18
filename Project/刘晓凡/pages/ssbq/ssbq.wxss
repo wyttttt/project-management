@@ -1,0 +1,36 @@
+/* pages/ssbq/ssbq.wxss */
+.container{
+  background-color: rgb(250, 250, 250);
+}
+.firstPart{
+  width: 100%;
+  height: 100rpx;
+  background-color: #1060ff;
+  margin-top: -110px;
+  position: fixed;
+  
+}
+.firstPartOne{
+  float: left;
+  width: 78%;
+  height: 60%;
+  margin: 3.5%;
+  text-align: center;
+  line-height: 60rpx;
+}
+.firstPartOneP{
+  color: white;
+  margin-left: 18%;
+}
+.secondPart{
+  float: left;
+  width: 100%;
+  height: 2400rpx;
+  margin-top: -13.5%;
+  /* background-color: chartreuse; */
+}
+.secondPartImg{
+  float: left;
+  width: 100%;
+  height: 100%;
+}

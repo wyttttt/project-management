@@ -3,11 +3,9 @@
 
   <view class="firstPart">
     <view class="firstPartOne">
-      <p class="firstPartOneP1">案例</p>
+      <p class="firstPartOneP1">法规案例</p>
     </view>
-    <view class="firstPartOne">
-      <p class="firstPartOneP1">法规</p>
-    </view>
+   
 
   </view>
 
@@ -35,9 +33,13 @@
       <p class="threePartP2">{{item.content}}</p>
       <view class="threePartTwo">
         <p class="threePartP3">{{item.court}}</p>
-        <p class="threePartP4">{{item.date}}8</p>
+        <p class="threePartP4">{{item.date}}</p>
       </view>
     </view>
   </block>
+
+  <view>
+
+  </view>
 
 </view>

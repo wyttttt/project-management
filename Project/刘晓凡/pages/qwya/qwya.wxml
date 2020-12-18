@@ -1,0 +1,39 @@
+<!--pages/qwya/qwya.wxml-->
+<!--pages/alcx/alcx.wxml-->
+<view class="container">
+
+  <view class="firstPart">
+    <view class="firstPartOne">
+      <p class="firstPartOneP1">普法栏目</p>
+    </view>
+
+  </view>
+
+
+  <!-- <view class="secondPart" bindtap="toQwyaxq">
+  <view class="secondPartOne">
+    <image class="secondPartOneImg" src="/icon/video/0.png"></image>
+    <p class="secondPartOneP1">这是标题这是标题这是标题</p>
+    <p class="secondPartOneP2">查看详情>></p>
+
+  </view>
+  
+</view> -->
+
+
+
+  <block wx:for="{{videopho}}" wx:key="yyy" data-item="item" wx:for-index="index">
+
+    <view class="secondPart" bindtap="toQwyaxq" id="{{item.id}}">
+      <view class="secondPartOne">
+        <image class="secondPartOneImg" src="{{item.photo}}"></image>
+        <p class="secondPartOneP1">{{item.title}}</p>
+        <p class="secondPartOneP2">查看详情>></p>
+
+      </view>
+
+    </view>
+  </block>
+
+
+</view>

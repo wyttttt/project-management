@@ -26,7 +26,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.removeStorageSync('img')
+    wx.removeStorageSync('nosaylikes')
+    wx.removeStorageSync('type')
+    wx.removeStorageSync('text')
+  
   },
 
   /**
@@ -67,6 +71,16 @@ Page({
   toMfzx:function(options){
     wx.navigateTo({
       url: '../mfzx/mfzx',
+    })
+  },
+  toTwzx:function(options){
+    wx.navigateTo({
+      url: '../twzx/twzx',
+    })
+  },
+  toZls:function(options){
+    wx.navigateTo({
+      url: '../zls/zls',
     })
   },
   toTip:function(option){

@@ -24,7 +24,7 @@
       <p class="threePartP3">这事回复这是回复这是回复这是回复</p>
       
     </view> -->
-    
+
 
   <block wx:for="{{answer}}" wx:key="yyy" data-item="item" wx:for-index="index">
     <view class="sevenPart">
@@ -33,22 +33,31 @@
       <p class="sevenPartP2">{{item.date}}</p>
       <view class="sevenPartTwo">
         <p class="sevenPartTwoP">{{item.text}}</p>
+        <image class="sevenPartTwoImg" mode="widthFix" src="{{item.img}}"></image>
 
+      </view>
+      <view class="sevenPartThree">
+        <p class="sevenPartThreeP1">{{item.type}}</p>
+        <p class="sevenPartThreeP2" bindtap="ch">
+          <image class="sevenPartThreeP2Img" src="../../icon/zxxq/sevenPartThreeP2Img.png"></image>
+          回复</p>
       </view>
     </view>
     <view class="secondPart">
       <image class="secondPartImg" src="../../icon/zcgs/secongPartImg.png"></image>
       <p class="secondPartP">律师回复</p>
-      
+
     </view>
-    
-    <view class="threePart">
-      <image class="threePartImg" src="{{item.csrc1}}"></image>
-      <p class="threePartP1">{{item.cname1}}</p>
-      <p class="threePartP2">{{item.cdate1}}</p>
-      <p class="threePartP3">{{item.ctext1}}</p>
-    </view>
-    <view class="threePart">
+
+    <block wx:for="{{comment}}" wx:key="xxx" data-item="itemlist" wx:for-index="i">
+      <view class="threePart">
+        <image class="threePartImg" src="{{item.imgsrc}}"></image>
+        <p class="threePartP1">{{item.name}}</p>
+        <p class="threePartP2">{{item.date}}</p>
+        <p class="threePartP3">{{item.text}}</p>
+      </view>
+    </block>
+    <!-- <view class="threePart">
       <image class="threePartImg" src="{{item.csrc2}}"></image>
       <p class="threePartP1">{{item.cname2}}</p>
       <p class="threePartP2">{{item.cdate2}}</p>
@@ -59,8 +68,11 @@
       <p class="threePartP1">{{item.cname3}}</p>
       <p class="threePartP2">{{item.cdate3}}</p>
       <p class="threePartP3">{{item.ctext3}}</p>
-    </view>
+    </view> -->
 
+    <view class="{{isChecked?'is_checked':'normal'}}">
+      <input class="fourPartI" type="text" bindinput="setvalue"  value="{{nowvalue}}" /><p class="fourPartIP"  bindtap="submit">提交</p>
+    </view>
 
   </block>
 

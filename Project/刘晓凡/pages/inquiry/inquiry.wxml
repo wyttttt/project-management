@@ -9,11 +9,11 @@
     <view class="secondPartIcon">
       <image class="secondPartImg" src="../../icon/inquiry/secondPartImg.png"></image>
     </view>
-    <p class="secondPartP1">免费咨询</p>
-    <p class="secondPartP2">免费咨询，多名律师为您解答</p>
+    <p class="secondPartP1">文字咨询</p>
+    <p class="secondPartP2">文字咨询，多名律师为您解答</p>
   </view>
 
-  <view class="secondPart" bindtap="toTip">
+  <view class="secondPart" bindtap="toTwzx">
     <view class="threePartIcon">
       <image class="threePartImg" src="../../icon/inquiry/threePartImg.png"></image>
     </view>
@@ -21,7 +21,7 @@
     <p class="secondPartP2">通过图文，语音与律师在线沟通</p>
   </view>
 
-  <view class="secondPart" bindtap="toTip">
+  <view class="secondPart" bindtap="toZls">
     <view class="fourPartIcon">
       <image class="fourPartImg" src="../../icon/inquiry/fourPartImg.png"></image>
     </view>
@@ -29,7 +29,7 @@
     <p class="secondPartP2">专业律师为您电话解答</p>
   </view>
 
-  <view class="secondPart" bindtap="toTip">
+  <view class="secondPart" bindtap="toZls">
     <view class="fivePartIcon">
       <image class="fivePartImg" src="../../icon/inquiry/fivePartImg.png"></image>
     </view>

@@ -6,10 +6,32 @@
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
 
       <view class="firstPartP">{{array[index]}}</view>
-
     </picker>
 
+  </view>
+
+  <view class="secondPart">
+    <picker bindchange="bindPickerChange0" value="{{index0}}" range="{{type}}">
+
+      <view class="firstPartP">{{type[index0]}}</view>
+    </picker>
 
   </view>
+
+  <view class="threePart">
+    <p class="threePartP1">计算结果</p>
+    <p class="threePartP2">{{cost}}</p>
+  </view>
+  
+  <view class="fourPart" bindtap="cum">
+    <p class="fourPartP">计算结果</p>
+  </view>
+
+  <view class="fivePart">
+    <p class="fivePartP1">温馨提示:</p>
+    <p class="fivePartP2">1、律师费仅现阶段收费，报价仅提供参考，最终以律师收费为准；</p>
+    <p class="fivePartP2">2、此律师费参考北京地区收费标准，中西部地区可进行酌情减免10%-30%；</p>
+  </view>
+
 
 </view>

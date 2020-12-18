@@ -103,4 +103,5 @@
   height: 300rpx;
   background-color: white;
   margin-top: 3%;
+  border: 0.5px solid #ddd;
 }

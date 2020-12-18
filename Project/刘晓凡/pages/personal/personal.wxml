@@ -1,16 +1,54 @@
 <!--index.wxml-->
 <view class="container">
 
-
 <view class="userinfo">
-  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取个人信息 </button>
   <block wx:else>
-    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <!-- <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
+
+    <view class="index">个人中心</view>
+  <view class="user" >
+   
+    <image class="img2" src="{{userInfo.avatarUrl}}"></image>
+    <p class="but">151****0011</p>
+    
+  </view>
+
+  <view class="info" bindtap="toMoney">
+    <p class="info1">
+      <p class="info11">3000000元</p>
+      <p class="info12">账户余额</p>
+   
+    </p>
+    <p class="info1">
+      <p class="info11">500元</p>
+      <p class="info12">邀请奖励</p>
+   
+    </p>
+   
+  </view>
+  <view bindtap="toMoney" class="v1">
+    <image class="img4" src="/images/qianbao.png"></image>
+    <text class="t1">我的钱包</text>
+  </view>
+  <view bindtap="toZixun" class="v1">
+    <image class="img4" src="/images/zixun.png"></image>
+    <text class="t1">我的咨询</text>
+  </view>
+  <view class="v1" bindtap="toguanzhu">
+    <image class="img4" src="/images/shoucang1.png"></image>
+    <text class="t1">我的关注</text>
+  </view>
+  
+  <view class="v1" bindtap="toSz">
+    <image class="img4" src="/images/shezhi.png"></image>
+    <text class="t1">设置</text>
+  </view>
+
+
+    <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
   </block>
 </view>
-<view class="usermotto">
-  <text class="user-motto">{{motto}}</text>
-</view>
+
 
 </view>

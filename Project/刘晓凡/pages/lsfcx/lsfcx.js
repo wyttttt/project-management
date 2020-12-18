@@ -68,8 +68,9 @@ Page({
   
   data: {
     array: ['选择地区', '北京市', '天津市', '河北省', '山西省', '吉林省', '山东省', '河南省'],
-    type: ['选择地区', '北京市', '天津市', '河北省', '山西省', '吉林省', '山东省', '河南省'],
+    type: ['选择案件类型', '一般民事', '婚姻家庭', '债务债权', '合同纠纷', '经济仲裁', '一般刑事', '劳动仲裁'],
     index: 0,
+    index0:0,
   },
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -77,6 +78,38 @@ Page({
       index: e.detail.value,
      
     })
-    console.log(e.detail.value*210+450)
+    
   },
+  bindPickerChange0: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index0: e.detail.value,
+     
+    })
+    
+  },
+  
+
+  cum:function(e){
+    console.log(this.data.index0)
+    if(this.data.index == 0){
+      wx.showToast({
+        title: '请选择地区',
+        icon: 'none',
+        duration:1000
+      })
+    }else if(this.data.index0 == 0){
+      wx.showToast({
+        title: '请选择案件类型',
+        icon: 'none',
+        duration:1000
+      })
+    }else{
+      this.setData({
+      // cost:Math.ceil(Math.random()*10)*300+"元"
+      cost:parseInt((this.data.index * 2 + this.data.index0 * 3))*150 + "元"
+    })
+    }
+    
+  }
 })
